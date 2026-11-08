@@ -5,12 +5,13 @@ cd /d "%~dp0"
 if exist ".venv\Scripts\python.exe" goto install
 echo First run: creating a local Python environment (needs internet, several minutes)...
 set "PYCMD="
-for %%V in (3.12 3.11 3.13) do (
+rem Pinned wheels (numpy 2.5, torch 2.8) exist for Python 3.12 and 3.13 only.
+for %%V in (3.12 3.13) do (
   if not defined PYCMD ( py -%%V -c "import sys" >nul 2>&1 && set "PYCMD=py -%%V" )
 )
-if not defined PYCMD ( python -c "import sys; assert (3,11)<=sys.version_info[:2]<=(3,13)" >nul 2>&1 && set "PYCMD=python" )
+if not defined PYCMD ( python -c "import sys; assert (3,12)<=sys.version_info[:2]<=(3,13)" >nul 2>&1 && set "PYCMD=python" )
 if not defined PYCMD (
-  echo Python 3.11, 3.12 or 3.13 ^(64-bit^) was not found. Install Python 3.12 from https://www.python.org and run this file again.
+  echo Python 3.12 or 3.13 ^(64-bit^) was not found. Install Python 3.12 from https://www.python.org and run this file again.
   goto fail
 )
 %PYCMD% -m venv .venv || goto fail
