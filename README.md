@@ -14,7 +14,7 @@ A CPU-only, locally executed Transformer system that matches a patient note to i
 | IEEE report (PDF) | [report/paper.pdf](report/paper.pdf) |
 | LaTeX source | [report/](report/) - `paper.tex`, `body.tex`, `results.tex`, `figures_arch.tex`; `numbers.tex`, `tables.tex`, `figures.tex` are generated from `results/` by `report/tables.py` |
 | Browser application | [Start-Screening.cmd](Start-Screening.cmd) → `app.py` + `index.html` |
-| Demonstration video | [demo.mp4](demo.mp4) |
+| Demonstration video | https://youtu.be/UXixH-OIGgQ (YouTube, unlisted, 6 min 58 s); also [demo.mp4](demo.mp4) |
 | Split manifest | [data/manifest.json](data/manifest.json) |
 | Trained weights | `results/adaptation.pt` (Pythia-70M target), `results/draft14m.pt` (distilled draft) |
 | Logs and metrics | [results/](results/) (see table below) |
@@ -102,9 +102,9 @@ Environment: Python 3.12, PyTorch 2.8.0 CPU, FP32, seed 42; HP EliteBook 840 G8 
 - Repository and source: https://github.com/AbdullahMasood73/genai-assignment-2
 - LaTeX source: https://github.com/AbdullahMasood73/genai-assignment-2/tree/main/report
 - Adapted weights: https://github.com/AbdullahMasood73/genai-assignment-2/raw/refs/heads/main/results/adaptation.pt
-- Demonstration: https://github.com/AbdullahMasood73/genai-assignment-2/blob/main/demo.mp4
+- Demonstration video: https://youtu.be/UXixH-OIGgQ (copy in the repository: [demo.mp4](demo.mp4))
 
-The repository is private; the owner must grant the evaluator access for these links to work. All deliverables are also in the submission ZIP.
+The repository is public. All deliverables are also in the submission ZIP.
 
 ## AI use
 
