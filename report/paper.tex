@@ -1,11 +1,22 @@
 \documentclass[conference]{IEEEtran}
+\usepackage{amsmath,amssymb}
+\usepackage{fontspec}
+\setmainfont{texgyretermes}[Extension=.otf,UprightFont=*-regular,BoldFont=*-bold,ItalicFont=*-italic,BoldItalicFont=*-bolditalic]
 \usepackage{graphicx}
 \usepackage{url}
-\setlength{\tabcolsep}{2.5pt}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{arrows.meta,positioning,fit,calc}
+\usepackage{cite}
+\setlength{\tabcolsep}{3pt}
+\input{numbers}
 \begin{document}
-\title{Evidence-Linked Clinical Trial Screening with a Compact Autoregressive Transformer}
-\author{\IEEEauthorblockN{Muhammad Abdullah Masood}\IEEEauthorblockA{I230756}}
+\title{Evidence-Linked Clinical Trial Criterion Screening with a Compact Fine-Tuned Decoder: KV Caching, Tiled Attention and Speculative Decoding on a CPU}
+\author{\IEEEauthorblockN{Muhammad Abdullah Masood}
+\IEEEauthorblockA{Roll No.\ I230756, Generative AI (Assignment 2)\\FAST National University of Computer and Emerging Sciences, Islamabad, Pakistan\\Source: \url{https://github.com/AbdullahMasood73/genai-assignment-2}}}
 \maketitle
 \input{body}
 \end{document}
-

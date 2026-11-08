@@ -1,0 +1,37 @@
+\begin{figure}[t]\centering
+\begin{tikzpicture}[font=\scriptsize,node distance=2.5mm,
+ box/.style={draw,rounded corners=2pt,align=center,minimum width=2.1cm,minimum height=5.5mm,fill=teal!8},
+ frozen/.style={box,fill=gray!20},
+ arr/.style={-{Latex[length=1.6mm]}}]
+\node[box] (in) {Prompt tokens + answer prefix};
+\node[frozen,below=of in] (emb) {Input embedding\\50{,}304$\times$512 (frozen)};
+\node[box,below=5mm of emb,minimum width=4.6cm,minimum height=23mm] (blk) {};
+\node[box,fill=white,minimum width=1.9cm] at ($(blk.north)+(-1.1,-0.45)$) (ln1) {LN$_1$};
+\node[box,fill=white,minimum width=1.9cm] at ($(blk.north)+(1.1,-0.45)$) (ln2) {LN$_2$};
+\node[box,fill=white,below=2mm of ln1,minimum width=1.9cm,text width=1.8cm] (att) {QKV, RoPE\\(16/64 dims)\\causal attn};
+\node[box,fill=white,below=2mm of ln2,minimum width=1.9cm,text width=1.8cm] (mlp) {MLP 512$\to$\\2048$\to$512\\GELU};
+\node[anchor=west,align=left] at ($(blk.east)+(0.35,0)$) (kv) {per-layer\\K,V cache\\(reused)};
+\draw[arr] (blk.east) -- (kv.west);
+\node[left=1mm of blk,align=right] {$\times 6$\\$x{+}\mathrm{Attn}{+}\mathrm{MLP}$\\(parallel residual)};
+\node[box,below=5mm of blk] (fln) {Final LayerNorm};
+\node[box,below=of fln] (head) {Restricted head 107$\times$512\\(label codes, stop, IDs 0--99)};
+\node[box,below=of head,fill=orange!15] (gram) {Grammar mask + stop bias $b$ $\to$ argmax};
+\draw[arr] (in)--(emb); \draw[arr] (emb)--(blk); \draw[arr] (blk)--(fln); \draw[arr] (fln)--(head); \draw[arr] (head)--(gram);
+\end{tikzpicture}
+\caption{Implemented Pythia-70M decoder. Grey: frozen; teal: trained (\TrainParams{} parameters). Each block caches its rotated keys and values. The early-exit draft reuses the first two blocks, the final norm and the head.}\label{fig:arch}\end{figure}
+
+\begin{figure*}[t]\centering
+\begin{tikzpicture}[font=\scriptsize,node distance=4mm,
+ box/.style={draw,rounded corners=2pt,align=center,minimum height=9mm,text width=2.25cm,fill=teal!8},
+ arr/.style={-{Latex[length=1.6mm]}}]
+\node[box] (a) {Patient note +\\criteria lines\\(browser)};
+\node[box,right=of a] (b) {Validate; keep or\\assign sentence IDs;\\type check};
+\node[box,right=of b] (c) {Prompt per criterion\\(note, type, text);\\$\le$1{,}930 tokens};
+\node[box,right=of c,fill=orange!15] (d) {Decoder: uncached /\\KV-cached / speculative\\(constrained greedy)};
+\node[box,right=of d] (e) {Label + sentence IDs\\$\to$ verbatim evidence,\\template explanation};
+\node[box,right=of e] (f) {Rules R1--R4 $\to$\\preliminary outcome;\\HTML/JSON export};
+\foreach \x/\y in {a/b,b/c,c/d,d/e,e/f} \draw[arr] (\x)--(\y);
+\node[below=3mm of d,draw,dashed,rounded corners=2pt,align=center,text width=5.2cm] (lab) {Inference lab: live warmed benchmarks (prefill, decode, tok/s, RSS, acceptance, token equality) and attention error checks};
+\draw[arr,dashed] (d)--(lab);
+\end{tikzpicture}
+\caption{Application workflow from user input to reviewable, exportable output. Ground truth exists only at criterion level; the overall outcome is a rule-based aggregation.}\label{fig:flow}\end{figure*}

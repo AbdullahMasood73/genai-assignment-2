@@ -1,64 +1,150 @@
-\begin{table}[ht]\centering\caption{Paired classification and evidence scores}\label{tab:scores}\small\begin{tabular}{lrrrrr}
+\begin{table}[t]\centering\caption{All adaptation runs, validation split only (best epoch by the selection score)}\label{tab:runs}\footnotesize
+\begin{tabular}{lrrrrrr}
 \hline
-Split & Model & Acc. & Macro-F1 & Ev. micro & Ev. macro\\\hline
-Validation & base & 0.189 & 0.127 & 0.116 & 0.524\\
-Validation & adapted & 0.621 & 0.219 & 0.000 & 0.563\\
-Test & base & 0.228 & 0.145 & 0.144 & 0.590\\
-Test & adapted & 0.612 & 0.222 & 0.000 & 0.704\\
-\hline\end{tabular}\end{table}
-Table~\ref{tab:scores} shows that supervised adaptation improves classification on both splits while eliminating positive evidence retrieval. The high macro evidence score arises from correctly empty sets.
-\begin{table}[ht]\centering\caption{Adapted test classification by criterion type}\label{tab:type}\small\begin{tabular}{lrrr}
+Configuration & Ep. & Best & Acc. & MF1$_p$ & Ev.F1 & Sel.\\\hline
+14M, unw. (1st subm.), 2e-4, 4\,ep & 4 & 4 & 0.621 & 0.219 & 0.000 & 0.109\\
+14M, bal.\,$p{=}$0.5, ev+stop $\times$3, 3e-4 & 3 & 1 & 0.621 & 0.215 & 0.000 & 0.108\\
+14M, unw., ev+stop $\times$3, 3e-4 & 3 & 1 & 0.621 & 0.215 & 0.000 & 0.108\\
+14M, bal.\,$p{=}$0.5, ev $\times$5, 3e-4 & 6 & 3 & 0.617 & 0.213 & 0.017 & 0.115\\
+14M, bal.\,$p{=}$0.5, ev $\times$5, 1e-3 & 6 & 5 & 0.626 & 0.218 & 0.000 & 0.109\\
+70M, bal.\,$p{=}$1, ev $\times$5, 2e-4, 10\,ep & 10 & 10 & 0.650 & 0.328 & 0.250 & 0.289\\
+70M, bal.\,$p{=}$1, ev $\times$5, 2e-4, 16\,ep & 16 & 9 & 0.631 & 0.277 & 0.360 & 0.318\\
+\hline\end{tabular}
+\\[2pt]\parbox{0.98\linewidth}{\scriptsize ``ev+stop'' runs used an early weighting bug that also up-weighted the stop symbol; 14M runs were stopped early once collapse was evident. The last row is the frozen model.}
+\end{table}
+
+\begin{table}[t]\centering\caption{Latent signal on validation from teacher-forced logits (ROC-AUC; 0.5 = chance)}\label{tab:diag}\footnotesize
+\begin{tabular}{lrrrr}
 \hline
-Group & Rows & Accuracy & Macro-F1\\\hline
-all & 206 & 0.612 & 0.222\\
-inclusion & 75 & 0.507 & 0.168\\
-exclusion & 131 & 0.672 & 0.202\\
-\hline\end{tabular}\end{table}
-Table~\ref{tab:type} shows stronger exclusion accuracy. The model frequently predicts not excluded in this group.
-\begin{table}[ht]\centering\caption{Adapted test performance by expert category}\label{tab:classes}\small\begin{tabular}{lrrrr}
+Model & Mean label & Included & Excl. N/A & Evidence\\\hline
+Pythia-14M base & 0.56 & 0.61 & 0.29 & 0.46\\
+Pythia-14M 1st subm. & 0.46 & 0.52 & 0.44 & 0.66\\
+Pythia-70M base & 0.55 & 0.56 & 0.48 & 0.51\\
+Pythia-70M final & 0.53 & 0.71 & 0.74 & 0.69\\
+\hline\end{tabular}
+\end{table}
+
+\begin{table}[t]\centering\caption{Fine-tuning configuration (Pythia-70M target)}\label{tab:hparams}\footnotesize
+\begin{tabular}{ll}
 \hline
-Class & Support & Precision & Recall & F1\\\hline
-included & 27 & 0.000 & 0.000 & 0.000\\
-not included & 7 & 0.000 & 0.000 & 0.000\\
-excluded & 0 & 0.000 & 0.000 & 0.000\\
-not excluded & 91 & 0.693 & 0.967 & 0.807\\
-not enough information & 66 & 0.481 & 0.576 & 0.524\\
-not applicable & 15 & 0.000 & 0.000 & 0.000\\
-\hline\end{tabular}\end{table}
-Table~\ref{tab:classes} shows that all correctly classified cases come from two labels. Excluded has no test support. Full per-type tables and confusion matrices are included as machine-readable metrics.
-\begin{table}[ht]\centering\caption{Adapted test confusion matrix; class order follows Table~\ref{tab:classes}}\label{tab:matrix}\small\begin{tabular}{lrrrrrr}
+Setting & Value\\\hline
+Trainable / total parameters & 18,970,112 / 44,725,760\\
+Frozen & input embedding (25.8M)\\
+Objective & answer-only teacher-forced CE\\
+Label weights & balanced, power 1\\
+Evidence-ID weight & 5 (stop symbol 1)\\
+Optimiser & AdamW, wd 0.01, clip 1.0\\
+Learning rate & 0.0002, 6\% warm-up, linear decay\\
+Batch & 1 record, accumulate 4\\
+Epochs / selected & 16 / 9\\
+Precision / threads / seed & FP32 / 6 CPU / 42\\
+\hline\end{tabular}
+\end{table}
+
+\begin{table*}[t]\centering\caption{Paired before/after comparison on identical validation and held-out test rows (constrained greedy decoding)}\label{tab:scores}\footnotesize
+\begin{tabular}{llcccccccccc}
 \hline
-Gold / pred. & A & B & C & D & E & F\\\hline
-A & 0 & 0 & 0 & 0 & 27 & 0\\
-B & 0 & 0 & 0 & 0 & 7 & 0\\
-C & 0 & 0 & 0 & 0 & 0 & 0\\
-D & 0 & 0 & 0 & 88 & 3 & 0\\
-E & 0 & 0 & 0 & 28 & 38 & 0\\
-F & 0 & 0 & 0 & 11 & 4 & 0\\
-\hline\end{tabular}\end{table}
-Table~\ref{tab:matrix} locates the largest systematic mistakes. Every included and not-included example is assigned insufficient information.
-\begin{table}[ht]\centering\caption{Generation timing in milliseconds and peak process RSS}\label{tab:runtime}\small\begin{tabular}{lrrrrr}
+Split & System & Acc. & MF1$_6$ & MF1$_p$ & Acc$_{inc}$ & Acc$_{exc}$ & Ev.P & Ev.R & Ev.F1$_\mu$ & Ev.F1$_M$ & Ev.F1$_M^{+}$\\\hline
+Validation & Majority & 0.621 & 0.215 & 0.215 & 0.409 & 0.721 & 0.000 & 0.000 & 0.000 & 0.563 & 0.000\\
+Validation & Maj.+lead sent. & 0.621 & 0.215 & 0.215 & 0.409 & 0.721 & 0.204 & 0.365 & 0.262 & 0.178 & 0.407\\
+Validation & 1st subm. 14M & 0.621 & 0.219 & 0.219 & 0.409 & 0.721 & 0.000 & 0.000 & 0.000 & 0.563 & 0.000\\
+Validation & Base 70M & 0.209 & 0.147 & 0.147 & 0.530 & 0.057 & 0.102 & 0.078 & 0.089 & 0.468 & 0.071\\
+Validation & Adapted (final) & 0.631 & 0.277 & 0.277 & 0.409 & 0.736 & 0.459 & 0.296 & 0.360 & 0.602 & 0.334\\
+Test & Majority & 0.626 & 0.226 & 0.272 & 0.507 & 0.695 & 0.000 & 0.000 & 0.000 & 0.704 & 0.000\\
+Test & Maj.+lead sent. & 0.626 & 0.226 & 0.272 & 0.507 & 0.695 & 0.184 & 0.404 & 0.253 & 0.150 & 0.508\\
+Test & 1st subm. 14M & 0.612 & 0.222 & 0.266 & 0.507 & 0.672 & 0.000 & 0.000 & 0.000 & 0.704 & 0.000\\
+Test & Base 70M & 0.194 & 0.144 & 0.173 & 0.360 & 0.099 & 0.099 & 0.149 & 0.119 & 0.549 & 0.083\\
+Test & Adapted (final) & 0.631 & 0.279 & 0.334 & 0.507 & 0.702 & 0.315 & 0.245 & 0.275 & 0.635 & 0.340\\
+\hline\end{tabular}
+\\[2pt]\parbox{0.95\linewidth}{\scriptsize MF1$_6$: macro-F1 over all six labels (zero-support classes count as 0); MF1$_p$: over labels present in the gold set. Ev.\ = evidence sentence retrieval; $\mu$ micro (pooled), $M$ per-record macro where two empty sets score 1, $M^{+}$ macro over records with non-empty gold evidence only. Majority = type-conditioned training majority label without evidence; Maj.+lead sent.\ adds the first note sentence as evidence; 1st subm.\ = our original Pythia-14M submission re-scored with these metrics.}
+\end{table*}
+
+\begin{table}[t]\centering\caption{Adapted model, held-out test, inclusion criteria ($n=75$): per-class scores and confusion matrix (rows gold, columns predicted)}\label{tab:cls_inclusion}\footnotesize
+\begin{tabular}{lrccc|rrrr}
 \hline
-In/out & Path & Prefill & Decode & Tok/s & MiB\\\hline
-32/4 & uncached & 7.7 & 22.8 & 131.2 & 333\\
-32/4 & cached & 6.2 & 16.2 & 178.7 & 333\\
-32/4 & speculative & -- & -- & 78.5 & 334\\
-96/8 & uncached & 11.9 & 90.6 & 78.0 & 341\\
-96/8 & cached & 12.2 & 42.3 & 146.9 & 341\\
-96/8 & speculative & -- & -- & 60.9 & 338\\
-192/16 & uncached & 28.1 & 397.4 & 37.6 & 347\\
-192/16 & cached & 21.7 & 109.1 & 122.4 & 347\\
-192/16 & speculative & -- & -- & 79.4 & 347\\
-\hline\end{tabular}\end{table}
-Table~\ref{tab:runtime} shows token agreement in all cases (logs include the assertions). Caching helps most on the longest prefix. Draft acceptance was 1/7, 2/22 and 7/39. Verification overhead made speculation slower than cached greedy at all three lengths.
-\begin{table}[ht]\centering\caption{Attention agreement and CPU runtime (milliseconds)}\label{tab:attention}\small\begin{tabular}{lrrrrr}
+Gold & n & P & R & F1 & Incl. & Not incl. & NEI & N/A\\\hline
+Incl. & 27 & 0.000 & 0.000 & 0.000 & 0 & 0 & 27 & 0\\
+Not incl. & 7 & 0.000 & 0.000 & 0.000 & 0 & 0 & 7 & 0\\
+NEI & 38 & 0.507 & 1.000 & 0.673 & 0 & 0 & 38 & 0\\
+N/A & 3 & 0.000 & 0.000 & 0.000 & 0 & 0 & 3 & 0\\
+\hline\end{tabular}
+\end{table}
+
+\begin{table}[t]\centering\caption{Adapted model, held-out test, exclusion criteria ($n=131$): per-class scores and confusion matrix (rows gold, columns predicted)}\label{tab:cls_exclusion}\footnotesize
+\begin{tabular}{lrccc|rrrr}
 \hline
-Length & Causal & Max err. & Mean err. & Full & Tiled\\\hline
-17 & yes & 3.6e-07 & 2.8e-08 & 0.19 & 0.79\\
-17 & no & 3.6e-07 & 3.4e-08 & 0.35 & 0.48\\
-65 & yes & 4.8e-07 & 3.0e-08 & 0.47 & 3.73\\
-65 & no & 3.6e-07 & 2.7e-08 & 0.35 & 3.48\\
-256 & yes & 3.6e-07 & 2.7e-08 & 2.60 & 15.85\\
-256 & no & 3.6e-07 & 2.4e-08 & 1.13 & 17.50\\
-\hline\end{tabular}\end{table}
-Table~\ref{tab:attention} shows FP32 agreement across causal and unmasked shapes. Python block dispatch dominates at these lengths. The score tile has at most 32 by 32 entries per head; process RSS includes retained buffers and does not directly measure this saving.
+Gold & n & P & R & F1 & Excl. & Not excl. & NEI & N/A\\\hline
+Excl. & 0 & 0.000 & 0.000 & 0.000 & 0 & 0 & 0 & 0\\
+Not excl. & 91 & 0.706 & 0.978 & 0.820 & 0 & 89 & 1 & 1\\
+NEI & 28 & 0.000 & 0.000 & 0.000 & 0 & 28 & 0 & 0\\
+N/A & 12 & 0.750 & 0.250 & 0.375 & 0 & 9 & 0 & 3\\
+\hline\end{tabular}
+\end{table}
+
+\begin{table}[t]\centering\caption{Held-out test per-label F1 and prediction counts before (base) and after adaptation}\label{tab:classes}\footnotesize
+\begin{tabular}{lrcccc}
+\hline
+Label & Support & F1 base & F1 adapt. & \#pred base & \#pred adapt.\\\hline
+Incl. & 27 & 0.529 & 0.000 & 75 & 0\\
+Not incl. & 7 & 0.000 & 0.000 & 0 & 0\\
+Excl. & 0 & 0.000 & 0.000 & 87 & 0\\
+Not excl. & 91 & 0.000 & 0.820 & 0 & 126\\
+NEI & 66 & 0.224 & 0.535 & 41 & 76\\
+N/A & 15 & 0.111 & 0.316 & 3 & 4\\
+\hline\end{tabular}
+\end{table}
+
+\begin{table*}[t]\centering\caption{Controlled greedy decoding on the adapted 70M target (stop suppressed; warm-up + median of 5; CPU, 2 threads)}\label{tab:runtime}\footnotesize
+\begin{tabular}{llrrrrrrrrc}
+\hline
+In/out & Path & Prefill & Decode & Total ms & Tok/s & $\times$unc. & RSS MiB & KV KiB & Acc./prop. & Equal\\\hline
+32/8 & uncached & 21.1 & 169.7 & 190.8 & 41.9 & 1.00 & 643 & -- & -- & yes\\
+32/8 & cached & 22.2 & 43.2 & 65.3 & 122.4 & 2.92 & 643 & 960 & -- & yes\\
+32/8 & speculative (early-exit) & -- & -- & 161.5 & 49.5 & 1.18 & 618 & -- & 0/26 & yes\\
+32/8 & speculative (14M) & -- & -- & 77.9 & 102.7 & 2.52 & 618 & -- & 7/7 & yes\\
+256/32 & uncached & 82.3 & 2791.5 & 2873.8 & 11.1 & 1.00 & 678 & -- & -- & yes\\
+256/32 & cached & 90.2 & 218.1 & 308.2 & 103.8 & 9.32 & 677 & 6912 & -- & yes\\
+256/32 & speculative (early-exit) & -- & -- & 336.1 & 95.2 & 8.55 & 657 & -- & 22/40 & yes\\
+256/32 & speculative (14M) & -- & -- & 704.0 & 45.5 & 4.03 & 664 & -- & 7/98 & yes\\
+1024/64 & uncached & 387.5 & 24756.7 & 25144.2 & 2.5 & 1.00 & 810 & -- & -- & yes\\
+1024/64 & cached & 395.2 & 665.4 & 1060.6 & 60.3 & 23.71 & 806 & 26112 & -- & yes\\
+1024/64 & speculative (early-exit) & -- & -- & 1124.9 & 56.9 & 22.35 & 799 & -- & 45/74 & yes\\
+1024/64 & speculative (14M) & -- & -- & 2143.7 & 29.9 & 11.85 & 785 & -- & 12/205 & yes\\
+\hline\end{tabular}
+\\[2pt]\parbox{0.95\linewidth}{\scriptsize Prefill and decode are timed separately for the two non-speculative paths; speculative time is end-to-end (both prefills included). KV KiB is the analytic FP32 cache size at the end of generation. RSS is sampled process memory (interpreter, all models) and can miss short peaks. Equal: token sequence identical to the uncached reference.}
+\end{table*}
+
+\begin{table}[t]\centering\caption{Real screening outputs (grammar and stop enabled) on 24 validation criteria: mean latency per criterion}\label{tab:screening}\footnotesize
+\begin{tabular}{lrrrrrr}
+\hline
+Path & n & Mean ms & Out tok. & Accepted & Rate & Equal\\\hline
+uncached & 24 & 184.5 & 2.33 & -- & -- & 24/24\\
+cached & 24 & 88.4 & 2.33 & -- & -- & 24/24\\
+speculative (early-exit) & 24 & 131.7 & 2.33 & 24/104 & 23\% & 24/24\\
+speculative (14M) & 24 & 106.0 & 2.33 & 55/57 & 96\% & 24/24\\
+\hline\end{tabular}
+\end{table}
+
+\begin{table*}[t]\centering\caption{Attention kernels vs.\ an FP64 SDPA ground truth (4 heads, $d_h=32$, FP32, median of 5)}\label{tab:attention}\footnotesize
+\begin{tabular}{lccrrrrrrrr}
+\hline
+$L_q\times L_k$ & C & Blk & Ref max & Tiled max & Tiled mean & Ref ms & Tiled ms & SDPA ms & Full KiB & Tile KiB\\\hline
+17$\times$17 & y & 32 & 5.4e-07 & 5.4e-07 & 4.1e-08 & 0.22 & 0.39 & 0.07 & 5 & 5\\
+17$\times$17 & n & 32 & 5.4e-07 & 5.4e-07 & 4.5e-08 & 0.15 & 0.25 & 0.06 & 5 & 5\\
+65$\times$65 & y & 32 & 4.7e-07 & 5.0e-07 & 3.5e-08 & 0.31 & 1.43 & 0.13 & 66 & 16\\
+65$\times$65 & n & 32 & 3.8e-07 & 3.8e-07 & 3.1e-08 & 0.20 & 1.43 & 0.09 & 66 & 16\\
+256$\times$256 & y & 32 & 6.1e-07 & 6.1e-07 & 2.6e-08 & 1.45 & 7.35 & 0.59 & 1024 & 16\\
+256$\times$256 & n & 32 & 3.5e-07 & 2.6e-07 & 1.8e-08 & 0.52 & 10.09 & 0.47 & 1024 & 16\\
+512$\times$512 & y & 32 & 6.7e-07 & 6.1e-07 & 2.1e-08 & 5.74 & 25.09 & 2.05 & 4096 & 16\\
+512$\times$512 & n & 32 & 5.4e-07 & 2.6e-07 & 1.4e-08 & 2.39 & 36.24 & 1.31 & 4096 & 16\\
+1$\times$300 & y & 32 & 7.0e-08 & 5.4e-08 & 1.4e-08 & 0.18 & 1.54 & 0.06 & 5 & 0\\
+1$\times$300 & n & 32 & 7.0e-08 & 5.4e-08 & 1.4e-08 & 0.13 & 1.26 & 0.06 & 5 & 0\\
+40$\times$300 & y & 32 & 2.4e-07 & 3.2e-07 & 1.9e-08 & 0.35 & 3.46 & 0.21 & 188 & 16\\
+40$\times$300 & n & 32 & 2.8e-07 & 2.8e-07 & 1.9e-08 & 0.24 & 2.71 & 0.16 & 188 & 16\\
+256$\times$256 & y & 8 & 6.1e-07 & 5.6e-07 & 2.6e-08 & 1.36 & 74.73 & 0.52 & 1024 & 1\\
+256$\times$256 & y & 16 & 6.1e-07 & 5.4e-07 & 2.5e-08 & 1.44 & 20.73 & 0.55 & 1024 & 4\\
+256$\times$256 & y & 64 & 6.1e-07 & 6.1e-07 & 2.7e-08 & 1.41 & 2.66 & 0.55 & 1024 & 64\\
+256$\times$256 & y & 128 & 6.1e-07 & 6.1e-07 & 3.0e-08 & 1.27 & 1.40 & 0.57 & 1024 & 256\\
+\hline\end{tabular}
+\\[2pt]\parbox{0.95\linewidth}{\scriptsize Errors are maximum/mean absolute differences from FP64 \texttt{scaled\_dot\_product\_attention}. Full/Tile KiB: size of the score matrix materialised by the reference versus the largest single tile of the online-softmax kernel. Rectangular shapes ($L_q<L_k$) model decoding with a KV cache.}
+\end{table*}
