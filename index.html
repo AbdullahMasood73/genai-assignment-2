@@ -1,14 +1,107 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Trial screening workbench</title>
-<style>*{box-sizing:border-box}body{margin:0;background:#f1f5f4;color:#173732;font:16px/1.5 "Segoe UI",sans-serif}main{max-width:1060px;margin:auto;padding:3rem 1.5rem}h1{font:normal clamp(2.5rem,5vw,4rem)/1.05 Georgia;margin:0}header{border-bottom:3px solid #187362;padding-bottom:1rem}section,article{background:white;border:1px solid #cad9d3;padding:1.4rem;margin-top:1rem;border-radius:8px}label{display:block;font-weight:650;margin:.7rem 0 .25rem}textarea,select,button{font:inherit;padding:.6rem;border:1px solid #8ca69e;border-radius:5px}textarea{width:100%;resize:vertical}button{background:#155f50;color:white;cursor:pointer}button:disabled{opacity:.6}button.secondary{background:white;color:#155f50}blockquote{margin:.6rem 0;padding:.5rem 1rem;border-left:3px solid #2d8471;background:#eff7f4}h2,h3{line-height:1.2}small{display:block;color:#465e58}.actions{display:flex;gap:1rem;align-items:center;flex-wrap:wrap;margin-top:1rem}@media print{header,.inputs,.actions{display:none}}</style>
-<main><header><h1>Trial screening workbench</h1><p>Educational screening prototype. Clinical enrollment decisions require professional review.</p></header>
-<section class="inputs"><label for="note">Patient record</label><textarea id="note" rows="4" placeholder="Enter a note or numbered patient sentences"></textarea>
-<label for="criteria">Trial criteria</label><small>One rule per line. Begin with inclusion | or exclusion |.</small><textarea id="criteria" rows="3"></textarea>
-<div class="actions"><label for="mode">Decoding</label><select id="mode"><option value="cached">KV cached</option><option value="compare">Compare all three modes</option><option value="uncached">Uncached</option><option value="speculative">Speculative</option></select><button id="run">Screen criteria</button><button class="secondary" id="example">Load example</button></div></section>
-<p role="status" id="status"></p><div id="results"></div><button hidden id="download">Export screening report</button></main>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Trial screening workbench</title>
+<style>
+*{box-sizing:border-box}[hidden]{display:none!important}body{margin:0;background:#f1f5f4;color:#173732;font:15px/1.5 "Segoe UI",system-ui,sans-serif}
+main{max-width:1100px;margin:auto;padding:2rem 1.25rem 4rem}h1{font:normal clamp(2rem,4vw,3rem)/1.1 Georgia,serif;margin:0}
+header{border-bottom:3px solid #187362;padding-bottom:.8rem}.notice{background:#fff4d6;border:1px solid #e0b94a;padding:.6rem .9rem;border-radius:6px;margin:.8rem 0 0}
+nav{display:flex;gap:.4rem;margin:1rem 0}nav button{background:white;color:#155f50}nav button[aria-selected=true]{background:#155f50;color:white}
+section,article{background:white;border:1px solid #cad9d3;padding:1.1rem 1.3rem;margin-top:1rem;border-radius:8px}
+label{display:block;font-weight:650;margin:.6rem 0 .2rem}textarea,select,button,input{font:inherit;padding:.5rem .7rem;border:1px solid #8ca69e;border-radius:5px}
+textarea{width:100%;resize:vertical}input[type=number]{width:7rem}button{background:#155f50;color:white;cursor:pointer}button:disabled{opacity:.55;cursor:wait}
+button.secondary{background:white;color:#155f50}.row{display:flex;gap:1rem;align-items:end;flex-wrap:wrap}.row>div{min-width:8rem}
+blockquote{margin:.4rem 0;padding:.4rem .8rem;border-left:3px solid #2d8471;background:#eff7f4}small,.muted{color:#4b625c}small{display:block;margin-top:.2rem}.warn{background:#fff4d6;border-left:3px solid #e0b94a;padding:.3rem .7rem}
+.badge{display:inline-block;padding:.1rem .55rem;border-radius:99px;font-weight:650;font-size:.9em}
+.b-ok{background:#d9f2e6;color:#0f5132}.b-bad{background:#fde2e1;color:#8a1c17}.b-unk{background:#fff0c2;color:#6b4e00}.b-na{background:#e7e9ee;color:#383d48}
+.flag{color:#8a1c17;font-weight:650}.error{background:#fde2e1;border:1px solid #d9827c;padding:.6rem .9rem;border-radius:6px}
+table{border-collapse:collapse;width:100%;font-size:.92em}th,td{border-bottom:1px solid #dde7e3;padding:.35rem .5rem;text-align:right}th:first-child,td:first-child{text-align:left}
+.bar{height:.8rem;background:#2d8471;border-radius:3px}.note-line{padding:.15rem .4rem;border-radius:4px}.note-line.cited{background:#d9f2e6}
+.ok{color:#0f5132;font-weight:650}.bad{color:#8a1c17;font-weight:650}ul{margin:.3rem 0}
+@media print{nav,.inputs,.actions,#lab,#about{display:none}}
+</style></head><body>
+<main>
+<header><h1>Trial screening workbench</h1>
+<p class="notice"><strong>Educational screening prototype.</strong> Not a clinical enrollment decision. Every output must be checked by a qualified professional. Use fictional or de-identified records only.</p>
+<p class="muted" id="health">Connecting to local model server…</p></header>
+<nav role="tablist"><button role="tab" aria-selected="true" data-tab="screen">Screening</button><button role="tab" aria-selected="false" data-tab="lab">Inference lab</button><button role="tab" aria-selected="false" data-tab="about">Rules &amp; provenance</button></nav>
+
+<div id="screen" role="tabpanel">
+<section class="inputs">
+<label for="note">Patient record</label><small>Numbered lines ("0. …", "1. …") keep their original IDs; free text is split into sentences and numbered from 0.</small>
+<textarea id="note" rows="6" placeholder="0. A 45-year-old woman presents with…"></textarea>
+<label for="criteria">Trial eligibility criteria</label><small>One rule per line, starting with <code>inclusion |</code> or <code>exclusion |</code>. Up to 30 lines.</small>
+<textarea id="criteria" rows="4" placeholder="inclusion | Age 18 years or older"></textarea>
+<div class="row actions"><div><label for="mode">Decoding</label><select id="mode"><option value="cached">KV-cached greedy</option><option value="compare">Compare all three modes</option><option value="uncached">Uncached greedy (reference)</option><option value="speculative">Speculative greedy</option></select></div>
+<button id="run">Screen criteria</button><button class="secondary" id="example">Load example</button><button class="secondary" id="clear">Clear</button></div>
+</section>
+<p role="status" id="status"></p><div id="results"></div>
+<div class="row actions" id="exports" hidden><button id="download">Export report (HTML)</button><button class="secondary" id="downloadJson">Export JSON</button><button class="secondary" onclick="print()">Print</button></div>
+</div>
+
+<div id="lab" role="tabpanel" hidden>
+<section><h2>Live decoding benchmark</h2><p class="muted">Runs uncached, KV-cached and speculative greedy decoding <em>now</em> on the same model and prompt, after a warm-up, and reports the median of the repeats. Token equality is checked against the uncached reference.</p>
+<div class="row"><div><label for="plen">Prompt tokens</label><input id="plen" type="number" min="8" max="1024" value="256"></div><div><label for="olen">Output tokens</label><input id="olen" type="number" min="1" max="64" value="16"></div><div><label for="reps">Repeats</label><input id="reps" type="number" min="1" max="5" value="3"></div><div><label for="draftSel">Draft model</label><select id="draftSel"></select></div><button id="bench">Run benchmark</button></div>
+<label><input type="checkbox" id="useNote"> Use the patient record from the Screening tab as prompt text</label>
+<p role="status" id="benchStatus"></p><div id="benchOut"></div></section>
+<section><h2>Live attention check</h2><p class="muted">Compares the reference softmax attention, the tiled online-softmax kernel and PyTorch's fused SDPA against an FP64 ground truth.</p>
+<div class="row"><div><label for="aq">Query length</label><input id="aq" type="number" min="1" max="1024" value="128"></div><div><label for="ak">Key length</label><input id="ak" type="number" min="1" max="1024" value="128"></div><div><label for="ab">Block</label><input id="ab" type="number" min="4" max="256" value="32"></div><div><label><input type="checkbox" id="ac" checked> Causal</label></div><button id="attn">Run attention check</button></div>
+<p role="status" id="attnStatus"></p><div id="attnOut"></div></section>
+<section><h2>Logged experiment results</h2><p class="muted">Offline measurements produced by <code>benchmark.py</code> and <code>evaluate.py</code> for the report (fixed protocol, five repeats).</p><div id="logs">Loading…</div></section>
+</div>
+
+<div id="about" role="tabpanel" hidden><section><h2>Overall outcome rules</h2><ul id="rules"></ul>
+<h2>Label meanings</h2><ul><li><b>included / not included</b> – inclusion criterion met / not met.</li><li><b>excluded / not excluded</b> – disqualifying condition present / absent.</li><li><b>not enough information</b> – the record cannot resolve the criterion.</li><li><b>not applicable</b> – the criterion does not apply to this patient.</li></ul>
+<h2>Provenance</h2><table id="prov"></table>
+<h2>Limitations</h2><p>The model is a small fine-tuned Pythia decoder trained on 37 patients. Its labels and evidence citations are frequently wrong (see report). Explanations are templates built from the predicted label and the verbatim cited sentences; they are not free-text clinical reasoning.</p></section></div>
+</main>
 <script>
-const el=id=>document.getElementById(id);let report;
-el('example').onclick=()=>{el('note').value='0. A 45-year-old patient reports a persistent dry cough.\n1. The patient denies a history of smoking.';el('criteria').value='inclusion | Age at least 18 years.\nexclusion | Current tobacco use.'};
-function add(parent,tag,text){const node=document.createElement(tag);node.textContent=text;parent.append(node);return node}
-el('run').onclick=async()=>{const results=el('results');results.replaceChildren();el('download').hidden=true;el('run').disabled=true;el('status').textContent='Screening…';try{const response=await fetch('/screen',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({note:el('note').value,criteria:el('criteria').value.split('\n').filter(s=>s.trim()),mode:el('mode').value})});report=await response.json();if(!response.ok)throw Error(report.error);add(results,'h2',report.overall);for(const r of report.results){const card=add(results,'article','');add(card,'small',r.type.toUpperCase());add(card,'h3',r.criterion);add(card,'strong',r.label);add(card,'p',r.explanation);for(const e of r.evidence)add(card,'blockquote',e.id+'. '+e.text);add(card,'small',Object.entries(r.latency_ms).map(([k,v])=>k+' '+v+' ms').join(' · '));if(r.draft)add(card,'small','Draft tokens accepted '+r.draft.accepted+' of '+r.draft.proposed);if(Object.keys(r.latency_ms).length>1)add(card,'small','Token agreement: '+r.agreement)}el('download').hidden=false;el('status').textContent=report.model}catch(e){el('status').textContent=e.message}finally{el('run').disabled=false}};
-el('download').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([report.notice+'\n'+report.model+'\n\n'+el('results').innerText],{type:'text/plain'}));a.download='screening-report.txt';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)};
-</script></html>
+const el=id=>document.getElementById(id);let report=null,health={};
+function add(parent,tag,text,cls){const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;parent.append(n);return n}
+const badgeClass=l=>({'included':'b-ok','not excluded':'b-ok','not included':'b-bad','excluded':'b-bad','not enough information':'b-unk','not applicable':'b-na'})[l];
+const fmt=(x,d=1)=>x==null?'–':Number(x).toFixed(d);
+async function post(url,body){let r;try{r=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)})}catch(e){throw Error('Cannot reach the local server. Is the launcher window still open?')}let j;try{j=await r.json()}catch(e){throw Error('Server returned an unreadable response ('+r.status+').')}if(!r.ok)throw Error(j.error||('Request failed ('+r.status+')'));return j}
+document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('nav button').forEach(x=>x.setAttribute('aria-selected',x===b));document.querySelectorAll('[role=tabpanel]').forEach(p=>p.hidden=p.id!==b.dataset.tab);if(b.dataset.tab==='lab')loadLogs()});
+fetch('/health').then(r=>r.json()).then(h=>{health=h;el('health').textContent='Model ready: '+h.target+' · checkpoint '+h.target_checkpoint_sha256+' · draft '+h.draft+' · v'+h.app_version;const t=el('prov');for(const [k,v] of Object.entries(h)){const tr=add(t,'tr');add(tr,'td',k);add(tr,'td',String(v))}const s=el('draftSel');for(const d of ['early_exit','pythia14m']){const o=add(s,'option',d==='early_exit'?'Early-exit (first 2 target blocks)':'Pythia-14M (separate adapted model)');o.value=d;if(d===h.draft)o.selected=true}}).catch(()=>{el('health').textContent='Model server is not responding. Start it with Start-Screening.cmd.';el('health').className='bad'});
+el('example').onclick=()=>{el('note').value='0. A 58-year-old man presents with three months of exertional chest pain.\n1. He has type 2 diabetes treated with metformin.\n2. He smokes one pack of cigarettes per day.\n3. Serum creatinine is 1.0 mg/dL.\n4. He has no history of stroke.';el('criteria').value='inclusion | Age 40 to 75 years.\ninclusion | Diagnosis of type 2 diabetes mellitus.\nexclusion | History of stroke.\nexclusion | Current pregnancy.\ninclusion | HbA1c between 7% and 10%.'};
+el('clear').onclick=()=>{el('note').value='';el('criteria').value='';el('results').replaceChildren();el('exports').hidden=true;el('status').textContent=''};
+function render(rep){const R=el('results');R.replaceChildren();const s=add(R,'section');add(s,'h2',rep.overall);add(s,'p','Aggregation rule '+rep.rule+' applied to '+rep.results.length+' criterion-level predictions. This summary is not a ground-truth label.','muted');
+ if(rep.conflicts.length){add(s,'b','Potential conflicts');const u=add(s,'ul');rep.conflicts.forEach(c=>add(u,'li',c))}
+ if(rep.missing_information.length){add(s,'b','Missing information (obtain before deciding)');const u=add(s,'ul');rep.missing_information.forEach(c=>add(u,'li',c))}
+ if(rep.unsupported.length){add(s,'b','Unsupported decisions (no cited sentence) – manual review','flag');const u=add(s,'ul');rep.unsupported.forEach(c=>add(u,'li',c))}
+ if(rep.consistency_checks.length){add(s,'b','Consistency checks (sentence cited but "not enough information")');const u=add(s,'ul');rep.consistency_checks.forEach(c=>add(u,'li',c))}
+ for(const r of rep.results){const a=add(R,'article');add(a,'small',r.type.toUpperCase()+' CRITERION');add(a,'h3',r.criterion);const b=add(a,'span',r.label,'badge '+badgeClass(r.label));if(r.unsupported)add(a,'span','  unsupported','flag');add(a,'p',r.explanation);if(r.check)add(a,'p',r.check,'warn');
+  if(r.evidence.length){for(const e of r.evidence)add(a,'blockquote','['+e.id+'] '+e.text)}else add(a,'p','No sentence cited.','muted');
+  add(a,'small','Latency: '+Object.entries(r.latency_ms).map(([k,v])=>k+' '+v+' ms').join(' · ')+' · prompt '+r.prompt_tokens+' tokens');
+  if(r.draft)add(a,'small','Speculative draft tokens accepted: '+r.draft.accepted+' of '+r.draft.proposed);
+  if(Object.keys(r.latency_ms).length>1)add(a,'small',r.agreement?'Token agreement across modes: identical output ✓':'Token agreement: MISMATCH between modes',r.agreement?'ok':'bad')}
+ const n=add(R,'section');add(n,'h3','Patient record as numbered ('+rep.numbering+')');const cited=new Set(rep.results.flatMap(r=>r.evidence.map(e=>e.id)));for(const s of rep.sentences)add(n,'div','['+s.id+'] '+s.text,'note-line'+(cited.has(s.id)?' cited':''));add(n,'small','Highlighted sentences are cited by at least one criterion.')}
+el('run').onclick=async()=>{el('results').replaceChildren();el('exports').hidden=true;el('run').disabled=true;el('status').className='';el('status').textContent='Screening… (compare mode runs three decoders per criterion)';
+ try{report=await post('/screen',{note:el('note').value,criteria:el('criteria').value.split('\n').filter(s=>s.trim()),mode:el('mode').value});report.input={note:el('note').value,criteria:el('criteria').value};render(report);el('exports').hidden=false;el('status').textContent='Done. Review each criterion and its evidence below.'}
+ catch(e){el('status').textContent=e.message;el('status').className='error'}finally{el('run').disabled=false}};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]);
+function download(name,text,type){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([text],{type}));a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
+el('downloadJson').onclick=()=>download('screening-report.json',JSON.stringify(report,null,2),'application/json');
+el('download').onclick=()=>{const r=report,p=r.provenance;let h='<!doctype html><meta charset="utf-8"><title>Screening report</title><style>body{font:15px/1.5 Segoe UI,sans-serif;max-width:850px;margin:2rem auto;color:#173732}blockquote{border-left:3px solid #2d8471;margin:.3rem 0;padding:.2rem .7rem;background:#eff7f4}.n{background:#fff4d6;padding:.6rem;border:1px solid #e0b94a}td,th{border-bottom:1px solid #ddd;padding:.25rem .5rem;text-align:left}</style>';
+ h+='<h1>Eligibility screening report</h1><p class="n"><b>'+esc(r.notice)+'</b></p><h2>'+esc(r.overall)+'</h2><p>Rule '+esc(r.rule)+'. '+r.results.length+' criteria evaluated.</p>';
+ if(r.missing_information.length)h+='<p><b>Missing information:</b> '+r.missing_information.map(esc).join('; ')+'</p>';if(r.unsupported.length)h+='<p><b>Unsupported decisions:</b> '+r.unsupported.map(esc).join('; ')+'</p>';
+ h+='<h2>Criterion-level results</h2>';for(const x of r.results){h+='<h3>'+esc(x.type)+': '+esc(x.criterion)+'</h3><p><b>'+esc(x.label)+'</b>'+(x.unsupported?' (unsupported)':'')+'</p><p>'+esc(x.explanation)+'</p>'+(x.check?'<p><i>'+esc(x.check)+'</i></p>':'')+x.evidence.map(e=>'<blockquote>['+e.id+'] '+esc(e.text)+'</blockquote>').join('')+'<p><small>Latency '+esc(JSON.stringify(x.latency_ms))+(x.draft?' · draft accepted '+x.draft.accepted+'/'+x.draft.proposed:'')+'</small></p>'}
+ h+='<h2>Patient record ('+esc(r.numbering)+')</h2>'+r.sentences.map(s=>'<div>['+s.id+'] '+esc(s.text)+'</div>').join('');
+ h+='<h2>Aggregation rules</h2><ul>'+r.rules.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul><h2>Provenance</h2><table>'+Object.entries(p).map(([k,v])=>'<tr><th>'+esc(k)+'</th><td>'+esc(v)+'</td></tr>').join('')+'<tr><th>decoding mode</th><td>'+esc(r.mode)+'</td></tr></table>';
+ download('screening-report.html',h,'text/html')};
+el('rules').replaceChildren();fetch('/health').then(()=>{}).catch(()=>{});
+['R1 Conflict: any inclusion predicted "not included" or exclusion predicted "excluded" → potential ineligibility.','R2 Otherwise any "not enough information" → undetermined, information missing.','R3 Otherwise → no conflict found among the entered criteria.','R4 Decisions without a cited sentence are flagged unsupported; absent evidence never proves eligibility or ineligibility.','R5 "Not enough information" with a cited sentence is flagged for a consistency check.'].forEach(t=>add(el('rules'),'li',t));
+function bars(parent,rows,key,label){const max=Math.max(...rows.map(r=>r[key]||0));const t=add(parent,'table');const h=add(t,'tr');[label,'',''].forEach(x=>add(h,'th',x));for(const r of rows){const tr=add(t,'tr');add(tr,'td',r.mode);const td=add(tr,'td');td.style.width='60%';const b=add(td,'div','','bar');b.style.width=(100*(r[key]||0)/max)+'%';add(tr,'td',fmt(r[key]))}}
+el('bench').onclick=async()=>{el('bench').disabled=true;el('benchOut').replaceChildren();el('benchStatus').className='';el('benchStatus').textContent='Measuring… (larger prompts with the uncached path can take a minute)';
+ try{const j=await post('/benchmark',{prompt_tokens:+el('plen').value,output_tokens:+el('olen').value,repeats:+el('reps').value,draft:el('draftSel').value,text:el('useNote').checked?el('note').value:''});const o=el('benchOut');
+  const t=add(o,'table');const hr=add(t,'tr');['Mode','Prefill ms','Decode ms','Total ms','Tokens/s','Speed-up vs uncached','Peak RSS MiB','KV cache KiB','Acceptance','Equal to reference'].forEach(x=>add(hr,'th',x));
+  for(const r of j.rows){const tr=add(t,'tr');[r.mode,fmt(r.prefill_ms),fmt(r.decode_ms),fmt(r.total_ms),fmt(r.tokens_s),fmt(r.speedup_vs_uncached,2)+'×',fmt(r.peak_rss_mib,0),r.kv_cache_kib?fmt(r.kv_cache_kib,0):'–',r.proposed?r.accepted+'/'+r.proposed:'–'].forEach(x=>add(tr,'td',x));add(tr,'td',r.equal?'yes':'NO (first mismatch at '+r.first_mismatch+')',r.equal?'ok':'bad')}
+  add(o,'h3','Total latency (ms, lower is better)');bars(o,j.rows,'total_ms','Mode');add(o,'p','Prompt: '+j.prompt_source+'. Draft: '+j.draft+'. Smallest top-2 logit margin on the cached path: '+fmt(j.min_top2_margin,4)+' (small margins are where rounding differences could flip a greedy token). '+j.protocol,'muted');el('benchStatus').textContent='Done.'}
+ catch(e){el('benchStatus').textContent=e.message;el('benchStatus').className='error'}finally{el('bench').disabled=false}};
+el('attn').onclick=async()=>{el('attn').disabled=true;el('attnOut').replaceChildren();el('attnStatus').className='';el('attnStatus').textContent='Running…';
+ try{const j=await post('/attention',{q_len:+el('aq').value,k_len:+el('ak').value,block:+el('ab').value,causal:el('ac').checked});const t=add(el('attnOut'),'table');const h=add(t,'tr');['Kernel','Max |error| vs FP64','Mean |error|','Median ms','Score memory KiB'].forEach(x=>add(h,'th',x));
+  [['Reference (full matrix)',j.ref_max_error,j.ref_mean_error,j.reference_ms,j.full_scores_kib],['Tiled online softmax',j.tiled_max_error,j.tiled_mean_error,j.tiled_ms,j.tile_scores_kib],['PyTorch fused SDPA','–','–',j.sdpa_ms,'–']].forEach(r=>{const tr=add(t,'tr');r.forEach((x,i)=>add(tr,'td',typeof x==='number'?(i<3?x.toExponential(2):fmt(x,3)):x))});
+  add(el('attnOut'),'p','Stability test with logits ≈ 7,200: naive exp overflows = '+j.stability.naive_has_inf+'; reference finite = '+j.stability.reference_finite+'; tiled finite = '+j.stability.tiled_finite+'.','muted');el('attnStatus').textContent='Done.'}
+ catch(e){el('attnStatus').textContent=e.message;el('attnStatus').className='error'}finally{el('attn').disabled=false}};
+let logsLoaded=false;async function loadLogs(){if(logsLoaded)return;logsLoaded=true;const L=el('logs');try{const j=await (await fetch('/logs')).json();L.replaceChildren();
+ if(j.test_metrics_summary){add(L,'h3','Held-out test metrics (8 patients, 206 criteria)');const t=add(L,'table');const h=add(t,'tr');['Model','Accuracy','Macro-F1','Evidence micro-F1','Evidence macro-F1'].forEach(x=>add(h,'th',x));for(const r of j.test_metrics_summary){const tr=add(t,'tr');[r.model,fmt(r.accuracy,3),fmt(r.macro_f1,3),fmt(r.evidence_micro_f1,3),fmt(r.evidence_macro_f1,3)].forEach(x=>add(tr,'td',x))}}
+ if(j.benchmark_log){add(L,'h3','Controlled decoding benchmark');const t=add(L,'table');const h=add(t,'tr');['In/out','Mode','Draft','Total ms','Tokens/s','Acceptance','Equal'].forEach(x=>add(h,'th',x));for(const r of j.benchmark_log.fixed_length){const tr=add(t,'tr');[r.input+'/'+r.output,r.mode,r.mode==='speculative'?r.draft:'–',fmt(r.total_ms),fmt(r.tokens_s),r.proposed?r.accepted+'/'+r.proposed:'–',r.equal?'yes':'no'].forEach(x=>add(tr,'td',x))}}
+ if(!L.children.length)L.textContent='No logs found.'}catch(e){L.textContent='Logs unavailable.'}}
+</script></body></html>
