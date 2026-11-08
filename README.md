@@ -19,7 +19,7 @@ A CPU-only, locally executed Transformer system that matches a patient note to i
 | Trained weights | `results/adaptation.pt` (Pythia-70M target), `results/draft14m.pt` (distilled draft) |
 | Logs and metrics | [results/](results/) (see table below) |
 
-## Results (held-out test: 8 untouched patients, 206 criteria)
+## Results (held-out test: 8 patients, 206 criteria)
 
 | System | Accuracy | Macro-F1 (present labels) | Evidence micro-F1 |
 |---|---|---|---|
@@ -29,7 +29,7 @@ A CPU-only, locally executed Transformer system that matches a patient note to i
 | Pythia-70M before fine-tuning | 0.194 | 0.173 | 0.119 |
 | **Pythia-70M fine-tuned (final)** | **0.631** | **0.334** | **0.275** |
 
-Honest reading: the fine-tuned model clearly improves on its base and on our first submission, but it is only marginally better than trivial baselines. It predicts "not enough information" for every inclusion criterion and every citation is sentence 0. See the report's Results and Error-analysis sections.
+Honest reading: patient-level bootstrap intervals (`results/test_uncertainty.json`) show the fine-tuned model is significantly better than the unadapted Pythia-70M on every metric. On accuracy it is statistically tied with the majority rule (McNemar p = 1.00), and on evidence with the lead-sentence rule. It predicts "not enough information" for every inclusion criterion, and every citation is sentence 0. The test patients had already been used to score the first submission, so treat them as held-out rather than pristine. See the report's Results, Error-analysis and Limitations sections.
 
 Systems results (all paths token-identical to the uncached reference):
 - KV cache: 2.9× / 9.3× / 23.7× faster than uncached at 32/256/1,024 prompt tokens.
@@ -39,7 +39,7 @@ Systems results (all paths token-identical to the uncached reference):
 ## Start the application (no coding needed)
 
 1. Extract the whole submission ZIP to a writable folder on Windows.
-2. Install 64-bit **Python 3.12** (3.11 or 3.13 also work) from python.org if it is not installed.
+2. Install 64-bit **Python 3.12** (3.13 also works; 3.11 and 3.14 do not, because the pinned numpy/torch wheels do not exist for them) from python.org if it is not installed.
 3. Double-click **Start-Screening.cmd**. On the first run it creates `.venv`, installs `requirements.txt`, and downloads (if absent) and SHA-256-verifies the two pinned Pythia base checkpoints. Allow several minutes and internet access.
 4. The browser opens http://127.0.0.1:8764 when the models are loaded. Keep the launcher window open; close it to stop the server.
 
@@ -62,6 +62,7 @@ From the project folder with the environment active (`.venv\Scripts\activate`):
     python distill.py 4 7                      # distil the Pythia-14M draft on the target's training outputs
     python evaluate.py final                   # writes freeze.json, then scores validation and test once
     python evaluate.py baselines               # rule-based lead-sentence baseline
+    python evaluate.py uncertainty             # patient-level bootstrap CIs + McNemar (saved predictions only)
     python diagnose.py --all                   # latent label/evidence signal (validation)
     python benchmark.py                        # decoding + attention benchmarks -> results/benchmark_log.json
     python verify.py                           # acceptance tests (6 groups)
