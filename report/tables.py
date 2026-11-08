@@ -128,6 +128,18 @@ for l in d["labels"]:
                  b["predicted_distribution"].get(l,0),d["predicted_distribution"].get(l,0)])
 table("classes","Held-out test per-label F1 and prediction counts before (base) and after adaptation","lrcccc",["Label","Support","F1 base","F1 adapt.","\\#pred base","\\#pred adapt."],rows)
 
+# ---------------- uncertainty (patient-level bootstrap) ----------------
+un=get("test_uncertainty")
+ci=lambda d: f"{d['point']:+.3f} [{d['ci95'][0]:+.3f}, {d['ci95'][1]:+.3f}]"
+rows=[]
+for k,lab in [("adapted-majority","vs.\\ majority"),("adapted-lead","vs.\\ maj.+lead"),("adapted-base","vs.\\ base 70M")]:
+    d=un["differences"][k]; rows.append([lab]+[ci(d[m]) for m in ["accuracy","macro_f1_present","evidence_micro_f1"]])
+mc=un["mcnemar_adapted_vs_majority"]
+table("ci",f"Test difference of the adapted model with patient-level 95\\% bootstrap intervals ({un['draws']} resamples of the 8 test patients)","lccc",
+      ["Adapted","$\\Delta$Acc.","$\\Delta$MF1$_p$","$\\Delta$Ev.F1$_\\mu$"],rows,wide=True,
+      note=f"Exact McNemar test on label correctness, adapted vs.\\ majority: {mc['adapted_only_correct']} vs.\\ {mc['majority_only_correct']} discordant criteria, $p={mc['exact_p']:.2f}$.")
+macro("McnemarP",f"{mc['exact_p']:.2f}"); macro("McnemarA",mc["adapted_only_correct"]); macro("McnemarM",mc["majority_only_correct"])
+
 # ---------------- decoding ----------------
 bl=get("benchmark_log"); dep=bl["deployment"]
 rows=[]
