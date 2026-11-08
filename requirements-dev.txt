@@ -1,0 +1,4 @@
+# Optional tools used only for research artefacts (not needed to run the application)
+-r requirements.txt
+transformers==4.56.2   # audit_reference.py (install in a separate environment or --target folder)
+playwright==1.64.1     # record_demo.py (uses the installed Microsoft Edge)
