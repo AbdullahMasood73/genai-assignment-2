@@ -88,7 +88,7 @@ with sync_playwright() as pw:
     scroll(page.locator("#attnOut"))
     caption("The attention check compares the reference softmax, the tiled online-softmax kernel and PyTorch's fused kernel against an FP64 ground truth. The tiled kernel is exact to about 1e-7 but slower in Python, while storing only one score tile.",15)
     scroll(page.locator("#logs"))
-    caption("Logged results from the report: held-out test metrics on the eight untouched test patients and the controlled decoding benchmark. The fine-tuned model clearly beats the base model and majority baseline, but many errors remain.",15)
+    caption("Logged results from the report: held-out test metrics on the eight test patients and the controlled decoding benchmark. Fine-tuning clearly beats the unadapted model, but on accuracy it is statistically tied with a majority-label rule, and its evidence is close to always citing the first sentence.",16)
     page.locator("nav button[data-tab=about]").click()
     caption("Rules and provenance documents the aggregation rules, label meanings, loaded model details and limitations.",11)
     page.locator("nav button[data-tab=screen]").click()
