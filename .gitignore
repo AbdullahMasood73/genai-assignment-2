@@ -1,0 +1,9 @@
+.venv/
+.tools/
+.packages/
+__pycache__/
+*.pyc
+*.zip
+GenAI_Assignment*.pdf
+base/model.safetensors
+PLAN.md

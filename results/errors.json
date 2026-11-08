@@ -1,0 +1,2337 @@
+[
+  {
+    "id": 159,
+    "criterion": "Age greater than 18 years",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+      "1": "She is now complaining of a cool right foot.",
+      "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "included",
+      "evidence": [
+        0
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 160,
+    "criterion": "Patient willing to give full informed consent for participation",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+      "1": "She is now complaining of a cool right foot.",
+      "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "included",
+      "evidence": [
+        3
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 161,
+    "criterion": "Patients undergoing elective carotid endarterectomy",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+      "1": "She is now complaining of a cool right foot.",
+      "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not included",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 162,
+    "criterion": "Patients undergoing open abdominal aortic aneurysm repair",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+      "1": "She is now complaining of a cool right foot.",
+      "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not included",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 163,
+    "criterion": "Patients undergoing endovascular abdominal aneurysm repair",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+      "1": "She is now complaining of a cool right foot.",
+      "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not included",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 164,
+    "criterion": "Patients undergoing surgical lower limb revascularisation (suprainguinal or infrainguinal)",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+      "1": "She is now complaining of a cool right foot.",
+      "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not included",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 165,
+    "criterion": "Pregnancy",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+      "1": "She is now complaining of a cool right foot.",
+      "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not applicable",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 169,
+    "criterion": "Patients with an estimated pre-operative glomerular filtration rate < 30mls/min/1.73m2",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+      "1": "She is now complaining of a cool right foot.",
+      "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 174,
+    "criterion": "Patients with previous axillary surgery",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+      "1": "She is now complaining of a cool right foot.",
+      "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 176,
+    "criterion": "No medical history of central vena catheterization.",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+      "1": "She is now complaining of a cool right foot.",
+      "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "included",
+      "evidence": [
+        0
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 177,
+    "criterion": "Maintenance hemodialysis after central vena catheterization.",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+      "1": "She is now complaining of a cool right foot.",
+      "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not included",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 178,
+    "criterion": "Signed informed consent.",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+      "1": "She is now complaining of a cool right foot.",
+      "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "included",
+      "evidence": [
+        3
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 179,
+    "criterion": "Had been performed central venous puncture or catheterization before.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+      "1": "She is now complaining of a cool right foot.",
+      "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not excluded",
+      "evidence": [
+        0
+      ]
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 181,
+    "criterion": "Refused to sign the informed consent.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+      "1": "She is now complaining of a cool right foot.",
+      "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not excluded",
+      "evidence": [
+        3
+      ]
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 185,
+    "criterion": "Patients were included if they were diagnosed with Shock, Acute respiratory distress syndrome (ARDS), or both.",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 40-year-old woman with no past medical history presents to the ER with excruciating pain in her right arm that had started 1 hour prior to her admission.",
+      "1": "She denies trauma.",
+      "2": "On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic.",
+      "3": "Her body temperature is normal and her blood pressure is 80/60.",
+      "4": "Her right arm has no discoloration or movement limitation.",
+      "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "included",
+      "evidence": [
+        2,
+        3
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 186,
+    "criterion": "Heart rate of at least 90/min;",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 40-year-old woman with no past medical history presents to the ER with excruciating pain in her right arm that had started 1 hour prior to her admission.",
+      "1": "She denies trauma.",
+      "2": "On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic.",
+      "3": "Her body temperature is normal and her blood pressure is 80/60.",
+      "4": "Her right arm has no discoloration or movement limitation.",
+      "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "included",
+      "evidence": [
+        2
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 187,
+    "criterion": "A respiratory rate of at least 20/min or a PaCO2 of 32mmHg or lower or the use of mechanical ventilation;",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 40-year-old woman with no past medical history presents to the ER with excruciating pain in her right arm that had started 1 hour prior to her admission.",
+      "1": "She denies trauma.",
+      "2": "On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic.",
+      "3": "Her body temperature is normal and her blood pressure is 80/60.",
+      "4": "Her right arm has no discoloration or movement limitation.",
+      "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "included",
+      "evidence": [
+        2
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 188,
+    "criterion": "The use of vasopressors to maintain a systolic blood pressure of at least 90mmHg despite fluid resuscitation, low dose of dopamine (\u2264 5 \u03bcg/kg per minute), or dobutamine;",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 40-year-old woman with no past medical history presents to the ER with excruciating pain in her right arm that had started 1 hour prior to her admission.",
+      "1": "She denies trauma.",
+      "2": "On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic.",
+      "3": "Her body temperature is normal and her blood pressure is 80/60.",
+      "4": "Her right arm has no discoloration or movement limitation.",
+      "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not included",
+      "evidence": [
+        3
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 193,
+    "criterion": "Patients were moribund.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 40-year-old woman with no past medical history presents to the ER with excruciating pain in her right arm that had started 1 hour prior to her admission.",
+      "1": "She denies trauma.",
+      "2": "On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic.",
+      "3": "Her body temperature is normal and her blood pressure is 80/60.",
+      "4": "Her right arm has no discoloration or movement limitation.",
+      "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 195,
+    "criterion": "Reported pain greater than or equal to 3 out of 10",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 40-year-old woman with no past medical history presents to the ER with excruciating pain in her right arm that had started 1 hour prior to her admission.",
+      "1": "She denies trauma.",
+      "2": "On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic.",
+      "3": "Her body temperature is normal and her blood pressure is 80/60.",
+      "4": "Her right arm has no discoloration or movement limitation.",
+      "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "included",
+      "evidence": [
+        0
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 196,
+    "criterion": "Less than 18 years of age",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 40-year-old woman with no past medical history presents to the ER with excruciating pain in her right arm that had started 1 hour prior to her admission.",
+      "1": "She denies trauma.",
+      "2": "On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic.",
+      "3": "Her body temperature is normal and her blood pressure is 80/60.",
+      "4": "Her right arm has no discoloration or movement limitation.",
+      "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not excluded",
+      "evidence": [
+        0
+      ]
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 197,
+    "criterion": "Decreased level of consciousness",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 40-year-old woman with no past medical history presents to the ER with excruciating pain in her right arm that had started 1 hour prior to her admission.",
+      "1": "She denies trauma.",
+      "2": "On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic.",
+      "3": "Her body temperature is normal and her blood pressure is 80/60.",
+      "4": "Her right arm has no discoloration or movement limitation.",
+      "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not excluded",
+      "evidence": [
+        0,
+        5
+      ]
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 198,
+    "criterion": "Inability to answer questions",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 40-year-old woman with no past medical history presents to the ER with excruciating pain in her right arm that had started 1 hour prior to her admission.",
+      "1": "She denies trauma.",
+      "2": "On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic.",
+      "3": "Her body temperature is normal and her blood pressure is 80/60.",
+      "4": "Her right arm has no discoloration or movement limitation.",
+      "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not excluded",
+      "evidence": [
+        5
+      ]
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 304,
+    "criterion": "Patients of both sexes aged \u2265 18 years.",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 48-year-old white male with history of common variable immunodeficiency (CVID) with acute abdominal pain, fever, dehydration, HR of 132 bpm, BP 80/40.",
+      "1": "The physical examination is remarkable for tenderness and positive Murphy sign.",
+      "2": "Abdominal ultrasound shows hepatomegaly and abundant free intraperitoneal fluid.",
+      "3": "Exploratory laparotomy reveals a ruptured liver abscess, which is then surgically drained.",
+      "4": "After surgery, the patient is taken to the ICU.",
+      "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "included",
+      "evidence": [
+        0
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 306,
+    "criterion": "Patients with liver space occupying lesion (LOE) that require extended hepatic resection.",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 48-year-old white male with history of common variable immunodeficiency (CVID) with acute abdominal pain, fever, dehydration, HR of 132 bpm, BP 80/40.",
+      "1": "The physical examination is remarkable for tenderness and positive Murphy sign.",
+      "2": "Abdominal ultrasound shows hepatomegaly and abundant free intraperitoneal fluid.",
+      "3": "Exploratory laparotomy reveals a ruptured liver abscess, which is then surgically drained.",
+      "4": "After surgery, the patient is taken to the ICU.",
+      "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": [
+        3
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 307,
+    "criterion": "Patient selection should be cautious, covering basically 5 types of liver damage which must be submitted prior to liver volumetry: Metastatic Disease subsidiary right hepatectomy extended to segment IV Metastatic Disease subsidiary right hepatectomy with suspected diseased liver (neoadjuvant chemotherapy) (in cases of doubt may be used liver function test indocyanine green) Bilobar liver metastases with multiple nodules in the right lobe and more than 3 nodules greater than 30 mm in the left hepatic lobe (LHI) will perform lumpectomies the LHI + right portal branch ligation (or postoperative percutaneous embolization) in order to make right hepatectomy 4-6 weeks (two stage surgery) Subsidiary Hepatocarcinoma extended right hepatectomy Liver Injury benign / malignant (Hemangiomas, hydatid cysts or liver tumors / primary bile hepatoblastoma), which by extension threatens the viability of the remaining liver tissue.",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 48-year-old white male with history of common variable immunodeficiency (CVID) with acute abdominal pain, fever, dehydration, HR of 132 bpm, BP 80/40.",
+      "1": "The physical examination is remarkable for tenderness and positive Murphy sign.",
+      "2": "Abdominal ultrasound shows hepatomegaly and abundant free intraperitoneal fluid.",
+      "3": "Exploratory laparotomy reveals a ruptured liver abscess, which is then surgically drained.",
+      "4": "After surgery, the patient is taken to the ICU.",
+      "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": [
+        3
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 308,
+    "criterion": "Patients give their written informed consent for participation in the study and provide sufficient guarantees adherence to protocol according to the opinion of the investigator in charge of the patient care.",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 48-year-old white male with history of common variable immunodeficiency (CVID) with acute abdominal pain, fever, dehydration, HR of 132 bpm, BP 80/40.",
+      "1": "The physical examination is remarkable for tenderness and positive Murphy sign.",
+      "2": "Abdominal ultrasound shows hepatomegaly and abundant free intraperitoneal fluid.",
+      "3": "Exploratory laparotomy reveals a ruptured liver abscess, which is then surgically drained.",
+      "4": "After surgery, the patient is taken to the ICU.",
+      "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "included",
+      "evidence": [
+        5
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 315,
+    "criterion": "BMI> 40 kg/m2.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 48-year-old white male with history of common variable immunodeficiency (CVID) with acute abdominal pain, fever, dehydration, HR of 132 bpm, BP 80/40.",
+      "1": "The physical examination is remarkable for tenderness and positive Murphy sign.",
+      "2": "Abdominal ultrasound shows hepatomegaly and abundant free intraperitoneal fluid.",
+      "3": "Exploratory laparotomy reveals a ruptured liver abscess, which is then surgically drained.",
+      "4": "After surgery, the patient is taken to the ICU.",
+      "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 319,
+    "criterion": "Difficulty in monitoring.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 48-year-old white male with history of common variable immunodeficiency (CVID) with acute abdominal pain, fever, dehydration, HR of 132 bpm, BP 80/40.",
+      "1": "The physical examination is remarkable for tenderness and positive Murphy sign.",
+      "2": "Abdominal ultrasound shows hepatomegaly and abundant free intraperitoneal fluid.",
+      "3": "Exploratory laparotomy reveals a ruptured liver abscess, which is then surgically drained.",
+      "4": "After surgery, the patient is taken to the ICU.",
+      "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not excluded",
+      "evidence": [
+        5
+      ]
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 322,
+    "criterion": "Pregnant women or women of childbearing age who do not have adequate contraception.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 48-year-old white male with history of common variable immunodeficiency (CVID) with acute abdominal pain, fever, dehydration, HR of 132 bpm, BP 80/40.",
+      "1": "The physical examination is remarkable for tenderness and positive Murphy sign.",
+      "2": "Abdominal ultrasound shows hepatomegaly and abundant free intraperitoneal fluid.",
+      "3": "Exploratory laparotomy reveals a ruptured liver abscess, which is then surgically drained.",
+      "4": "After surgery, the patient is taken to the ICU.",
+      "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not excluded",
+      "evidence": [
+        0
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 323,
+    "criterion": "Immune Deficiency and early BMF in childhood",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 48-year-old white male with history of common variable immunodeficiency (CVID) with acute abdominal pain, fever, dehydration, HR of 132 bpm, BP 80/40.",
+      "1": "The physical examination is remarkable for tenderness and positive Murphy sign.",
+      "2": "Abdominal ultrasound shows hepatomegaly and abundant free intraperitoneal fluid.",
+      "3": "Exploratory laparotomy reveals a ruptured liver abscess, which is then surgically drained.",
+      "4": "After surgery, the patient is taken to the ICU.",
+      "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 324,
+    "criterion": "Common Variable Immunodeficiency (CVID)",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 48-year-old white male with history of common variable immunodeficiency (CVID) with acute abdominal pain, fever, dehydration, HR of 132 bpm, BP 80/40.",
+      "1": "The physical examination is remarkable for tenderness and positive Murphy sign.",
+      "2": "Abdominal ultrasound shows hepatomegaly and abundant free intraperitoneal fluid.",
+      "3": "Exploratory laparotomy reveals a ruptured liver abscess, which is then surgically drained.",
+      "4": "After surgery, the patient is taken to the ICU.",
+      "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "included",
+      "evidence": [
+        0
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 326,
+    "criterion": "Refusal to consent.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 48-year-old white male with history of common variable immunodeficiency (CVID) with acute abdominal pain, fever, dehydration, HR of 132 bpm, BP 80/40.",
+      "1": "The physical examination is remarkable for tenderness and positive Murphy sign.",
+      "2": "Abdominal ultrasound shows hepatomegaly and abundant free intraperitoneal fluid.",
+      "3": "Exploratory laparotomy reveals a ruptured liver abscess, which is then surgically drained.",
+      "4": "After surgery, the patient is taken to the ICU.",
+      "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not excluded",
+      "evidence": [
+        5
+      ]
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 381,
+    "criterion": "Age > 18 years at the time of signing the informed consent form",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "included",
+      "evidence": [
+        0
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 382,
+    "criterion": "Fulfil at least 4 criteria for SLE as defined by the American College of Rheumatology (ACR)",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "included",
+      "evidence": [
+        0,
+        1,
+        2
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 383,
+    "criterion": "Present with active SLE disease with at least one of the following symptoms: i) Arthritis - > 2 joints with pain and signs of inflammation (i.e. tenderness, swelling, or effusion) ii) Inflammatory-type skin rash iii) Oral ulcers",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "included",
+      "evidence": [
+        0,
+        1
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 385,
+    "criterion": "Ability to take and retain oral medication",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "included",
+      "evidence": [
+        4
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 386,
+    "criterion": "Ability to sign and date a written informed consent prior to entering the study",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "included",
+      "evidence": [
+        4
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 387,
+    "criterion": "Willingness and ability to comply with the protocol for the duration of the study",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "included",
+      "evidence": [
+        4
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 388,
+    "criterion": "Active severe SLE flare with central nervous system (CNS) manifestations, active renal lupus, systemic vasculitis, active pericarditis, active pleuritis, active peritonitis or other SLE manifestations requiring treatment not allowed by the study protocol.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not excluded",
+      "evidence": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 389,
+    "criterion": "Severe renal impairment (estimated or measured GFR <50%)",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 390,
+    "criterion": "Oral treatment with corticosteroids (>15 mg/day prednisolone or equivalent) or changes in corticosteroid dosing within 30 days prior to the first dose of study medication. This also includes intraarticular steroid injections or topical treatment for SLE symptoms. Inhaled or topical steroids may be given for reasons other than SLE disease activity (such as asthma, contact dermatitis) as clinically indicated.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 391,
+    "criterion": "Intravenous corticosteroids within 3 months prior to the first dose of study medication.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 392,
+    "criterion": "Intravenous cyclophosphamide within 6 months prior to the first dose of study medication.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 393,
+    "criterion": "Treatment with anti-rheumatic/immunosuppressive drugs within 3 months prior to first dose of study medication, other than the following medications at stable doses: methotrexate (\u226425 mg/week), azathioprine (\u22642.5 mg/kg/day), hydroxychloroquine and mycophenolate mofetil (\u22643000 mg/day).",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 394,
+    "criterion": "B-cell depletion therapy (such as treatment with Rituximab) within 12 months prior to the first dose of study medication.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 395,
+    "criterion": "Potent inhibitors or inducers of CYP3A4 intravenously or orally within 14 days prior to first dose of study medication.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 398,
+    "criterion": "History of additional risk factors for torsade de pointes (eg, heart failure, hypokalemia, family history of long QT syndrome)",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 399,
+    "criterion": "Treatment with concomitant medications that prolong the QT interval.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 403,
+    "criterion": "Positive result on screening for hepatitis B surface antigen, hepatitis C antibodies or human immunodeficiency virus (HIV) antibodies.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 404,
+    "criterion": "Drug abuse.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 405,
+    "criterion": "Major surgery within 3 weeks prior to study entry.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 406,
+    "criterion": "Known or suspected hypersensitivity to ABR-215757 or excipients.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 407,
+    "criterion": "Female subject of child-bearing potential who is not using a medically accepted safe method of contraception. All female subjects of child-bearing potential must have a negative urine pregnancy test at the Screening and Baseline Visits. As interaction studies between ABR-215757 and oral contraceptives have not yet been performed, women using the contraceptive pill must also use a complementary contraceptive device, i.e. barrier method, during the treatment period and for at least 1 month thereafter.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 408,
+    "criterion": "Female subject of child-bearing potential who is pregnant or lactating.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 409,
+    "criterion": "Simultaneous participation or participation within 4 months or 5 half lives (whichever is longer) prior to study entry in any other study involving investigational drugs or other experimental therapy.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 410,
+    "criterion": "Other significant, unstable medical disease not related to SLE that in the investigator's opinion would confound the study result or put the patient at risk.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 411,
+    "criterion": "Patients likely to receive oral or intravenous steroids or immunosuppressant for other non-SLE condition during the study duration, as this will confound the study result.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 412,
+    "criterion": "Vaccination within 4 weeks prior to the first dose of study medication.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 413,
+    "criterion": "Patients with systemic Lupus erythematosus",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "included",
+      "evidence": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 414,
+    "criterion": "Patients without systemic Lupus erythematosus",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not excluded",
+      "evidence": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 415,
+    "criterion": "Age 8-18 years",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 15-year-old girl presents to the ER with abdominal pain.",
+      "1": "The pain appeared gradually and was periumbilical at first, localizing to the right lower quadrant over hours.",
+      "2": "She has had no appetite since yesterday but denies diarrhea.",
+      "3": "She has had no sexual partners and her menses are regular.",
+      "4": "On examination, she has localized rebound tenderness over the right lower quadrant.",
+      "5": "On an abdominal ultrasound, a markedly edematous appendix is seen.",
+      "6": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "included",
+      "evidence": [
+        0
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 416,
+    "criterion": "referred from emergency department for suspected appendicitis",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 15-year-old girl presents to the ER with abdominal pain.",
+      "1": "The pain appeared gradually and was periumbilical at first, localizing to the right lower quadrant over hours.",
+      "2": "She has had no appetite since yesterday but denies diarrhea.",
+      "3": "She has had no sexual partners and her menses are regular.",
+      "4": "On examination, she has localized rebound tenderness over the right lower quadrant.",
+      "5": "On an abdominal ultrasound, a markedly edematous appendix is seen.",
+      "6": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "included",
+      "evidence": [
+        0,
+        5
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 417,
+    "criterion": "receiving either CT scan or ultrasound of the abdomen for diagnosis",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 15-year-old girl presents to the ER with abdominal pain.",
+      "1": "The pain appeared gradually and was periumbilical at first, localizing to the right lower quadrant over hours.",
+      "2": "She has had no appetite since yesterday but denies diarrhea.",
+      "3": "She has had no sexual partners and her menses are regular.",
+      "4": "On examination, she has localized rebound tenderness over the right lower quadrant.",
+      "5": "On an abdominal ultrasound, a markedly edematous appendix is seen.",
+      "6": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "included",
+      "evidence": [
+        5
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 418,
+    "criterion": "Failure to pass MRI metal screening",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 15-year-old girl presents to the ER with abdominal pain.",
+      "1": "The pain appeared gradually and was periumbilical at first, localizing to the right lower quadrant over hours.",
+      "2": "She has had no appetite since yesterday but denies diarrhea.",
+      "3": "She has had no sexual partners and her menses are regular.",
+      "4": "On examination, she has localized rebound tenderness over the right lower quadrant.",
+      "5": "On an abdominal ultrasound, a markedly edematous appendix is seen.",
+      "6": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 419,
+    "criterion": "Claustrophobia or need for sedation due to inability to hold still",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 15-year-old girl presents to the ER with abdominal pain.",
+      "1": "The pain appeared gradually and was periumbilical at first, localizing to the right lower quadrant over hours.",
+      "2": "She has had no appetite since yesterday but denies diarrhea.",
+      "3": "She has had no sexual partners and her menses are regular.",
+      "4": "On examination, she has localized rebound tenderness over the right lower quadrant.",
+      "5": "On an abdominal ultrasound, a markedly edematous appendix is seen.",
+      "6": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 420,
+    "criterion": "Two or more symptoms of acute appendicitis for at least 24 hours or radiologic evidence of complicated appendicitis",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 15-year-old girl presents to the ER with abdominal pain.",
+      "1": "The pain appeared gradually and was periumbilical at first, localizing to the right lower quadrant over hours.",
+      "2": "She has had no appetite since yesterday but denies diarrhea.",
+      "3": "She has had no sexual partners and her menses are regular.",
+      "4": "On examination, she has localized rebound tenderness over the right lower quadrant.",
+      "5": "On an abdominal ultrasound, a markedly edematous appendix is seen.",
+      "6": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "included",
+      "evidence": [
+        0,
+        1,
+        2,
+        5
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 422,
+    "criterion": "If female, using birth control",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 15-year-old girl presents to the ER with abdominal pain.",
+      "1": "The pain appeared gradually and was periumbilical at first, localizing to the right lower quadrant over hours.",
+      "2": "She has had no appetite since yesterday but denies diarrhea.",
+      "3": "She has had no sexual partners and her menses are regular.",
+      "4": "On examination, she has localized rebound tenderness over the right lower quadrant.",
+      "5": "On an abdominal ultrasound, a markedly edematous appendix is seen.",
+      "6": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not applicable",
+      "evidence": [
+        3
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 678,
+    "criterion": "Diagnosis of mild sleep-disordered breathing (MSDB) defined as meeting all of the following criteria: Caregiver report of habitual snoring that occurs most of the night on at least three nights per week, and has been present for at least three months (on average occurring > 3 nights per week or more half of sleep time)",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 10 yo boy with nighttime snoring, pauses in breathing, and restlessness with nighttime awakenings.",
+      "1": "No history of headache or night terrors.",
+      "2": "The boy's teacher recently contacted his parents because she was concerned about his declining grades, lack of attention, and excessive sleepiness during class.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 682,
+    "criterion": "Primary indication for AT is nocturnal obstructive symptoms (i.e., not recurrent infections or other indications).",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 10 yo boy with nighttime snoring, pauses in breathing, and restlessness with nighttime awakenings.",
+      "1": "No history of headache or night terrors.",
+      "2": "The boy's teacher recently contacted his parents because she was concerned about his declining grades, lack of attention, and excessive sleepiness during class.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "included",
+      "evidence": [
+        0
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 683,
+    "criterion": "Previous tonsillectomy, including partial tonsillectomy",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 10 yo boy with nighttime snoring, pauses in breathing, and restlessness with nighttime awakenings.",
+      "1": "No history of headache or night terrors.",
+      "2": "The boy's teacher recently contacted his parents because she was concerned about his declining grades, lack of attention, and excessive sleepiness during class.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not applicable",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 691,
+    "criterion": "Experiences symptoms of OSA, including snoring and sleepiness",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 10 yo boy with nighttime snoring, pauses in breathing, and restlessness with nighttime awakenings.",
+      "1": "No history of headache or night terrors.",
+      "2": "The boy's teacher recently contacted his parents because she was concerned about his declining grades, lack of attention, and excessive sleepiness during class.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "included",
+      "evidence": [
+        0,
+        2
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 693,
+    "criterion": "Suspected diagnosis of a sleep disorder other than OSA (i.e., periodic leg movements, narcolepsy, insomnia, central sleep apnea, sleep hypoventilation syndrome)",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 10 yo boy with nighttime snoring, pauses in breathing, and restlessness with nighttime awakenings.",
+      "1": "No history of headache or night terrors.",
+      "2": "The boy's teacher recently contacted his parents because she was concerned about his declining grades, lack of attention, and excessive sleepiness during class.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not applicable",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 697,
+    "criterion": "Pregnant",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 10 yo boy with nighttime snoring, pauses in breathing, and restlessness with nighttime awakenings.",
+      "1": "No history of headache or night terrors.",
+      "2": "The boy's teacher recently contacted his parents because she was concerned about his declining grades, lack of attention, and excessive sleepiness during class.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not applicable",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 698,
+    "criterion": "Inability to communicate verbally, write, or read",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 10 yo boy with nighttime snoring, pauses in breathing, and restlessness with nighttime awakenings.",
+      "1": "No history of headache or night terrors.",
+      "2": "The boy's teacher recently contacted his parents because she was concerned about his declining grades, lack of attention, and excessive sleepiness during class.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not excluded",
+      "evidence": [
+        3
+      ]
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 741,
+    "criterion": "referring doctor suspects peritonsillar abscess",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
+      "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
+      "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
+      "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 742,
+    "criterion": "patient is voluntary",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
+      "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
+      "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
+      "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "included",
+      "evidence": [
+        4
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 743,
+    "criterion": "patient has daily access to his/her e-mail",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
+      "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
+      "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
+      "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": [
+        4
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 745,
+    "criterion": "female patients have adequate birth-control method",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
+      "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
+      "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
+      "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not applicable",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 746,
+    "criterion": "patient has peritonsillar abscess",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
+      "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
+      "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
+      "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 750,
+    "criterion": "pregnancy",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
+      "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
+      "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
+      "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not applicable",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 751,
+    "criterion": "breast-feeding",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
+      "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
+      "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
+      "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not applicable",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 754,
+    "criterion": "alcoholism (drunk at least once a week)",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
+      "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
+      "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
+      "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not applicable",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 756,
+    "criterion": "treatment of peritonsillar abscess requires in-patient care",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
+      "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
+      "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
+      "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 758,
+    "criterion": "army recruit",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
+      "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
+      "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
+      "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not applicable",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 759,
+    "criterion": "Age 6 months to less than 13 years of age (<13)",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
+      "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
+      "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
+      "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "included",
+      "evidence": [
+        0
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 760,
+    "criterion": "Clinical diagnosis of acute tonsillitis/pharyngitis caused by Streptococcus pyogenes based on:",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
+      "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
+      "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
+      "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 762,
+    "criterion": "A sore and scratchy throat and/or pain on swallowing (odynophagia) together with at least 2 of the following clinical signs:",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
+      "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
+      "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
+      "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 766,
+    "criterion": "Fever",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
+      "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
+      "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
+      "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "included",
+      "evidence": [
+        0
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 767,
+    "criterion": "Symptoms that collectively suggest nonstreptococcal T/P (eg, laryngitis, coryza, conjunctivitis, diarrhea, cough)",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
+      "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
+      "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
+      "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not applicable",
+      "evidence": [
+        0
+      ]
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 771,
+    "criterion": "Females of childbearing potential (ie, have reached menarche)",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
+      "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
+      "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
+      "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not applicable",
+      "evidence": [
+        0
+      ]
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 774,
+    "criterion": "Myasthenia gravis",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
+      "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
+      "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
+      "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not excluded",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 779,
+    "criterion": "Has been treated with rifampicin, phenytoin, carbamazepine, or St. John's wort within the last 2 weeks",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
+      "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
+      "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
+      "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not excluded",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 782,
+    "criterion": "Children of the investigator or subinvestigator, research assistant, pharmacist, study coordinator, other staff, or relative thereof directly involved in the conduct of the protocol",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
+      "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
+      "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
+      "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 827,
+    "criterion": "Clinical diagnosis of bronchial asthma",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 4 year old boy presents to the emergency room with wheezing.",
+      "1": "He has had a history of allergic rhinitis, but no history of wheezing.",
+      "2": "His mother reports that 5 hours ago patient was playing in the backyard sandbox when she heard him suddenly start coughing.",
+      "3": "The coughing lasted only moments, but he has been audibly wheezing since.",
+      "4": "Mother was concerned, because his breathing has not returned to normal, so she brought him to the ED.",
+      "5": "On exam, the child is playful and well appearing.",
+      "6": "Wheezing is heard in the mid-right chest area.",
+      "7": "O2 sats are 100% on room air.",
+      "8": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": [
+        0,
+        1,
+        2,
+        3,
+        6
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 830,
+    "criterion": "Normal lung function, defined as (Knudson 1976/1984 predicted set): FVC of > 80 % of that predicted for gender, ethnicity, age and height FEV1 of > 80 % of that predicted for gender, ethnicity, age and height FEV1/FVC ratio of > .75",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 4 year old boy presents to the emergency room with wheezing.",
+      "1": "He has had a history of allergic rhinitis, but no history of wheezing.",
+      "2": "His mother reports that 5 hours ago patient was playing in the backyard sandbox when she heard him suddenly start coughing.",
+      "3": "The coughing lasted only moments, but he has been audibly wheezing since.",
+      "4": "Mother was concerned, because his breathing has not returned to normal, so she brought him to the ED.",
+      "5": "On exam, the child is playful and well appearing.",
+      "6": "Wheezing is heard in the mid-right chest area.",
+      "7": "O2 sats are 100% on room air.",
+      "8": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 831,
+    "criterion": "Oxygen saturation of > 94 % and normal blood pressure (Systolic between 150 - 90, Diastolic between 90-60 mm Hg)",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 4 year old boy presents to the emergency room with wheezing.",
+      "1": "He has had a history of allergic rhinitis, but no history of wheezing.",
+      "2": "His mother reports that 5 hours ago patient was playing in the backyard sandbox when she heard him suddenly start coughing.",
+      "3": "The coughing lasted only moments, but he has been audibly wheezing since.",
+      "4": "Mother was concerned, because his breathing has not returned to normal, so she brought him to the ED.",
+      "5": "On exam, the child is playful and well appearing.",
+      "6": "Wheezing is heard in the mid-right chest area.",
+      "7": "O2 sats are 100% on room air.",
+      "8": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": [
+        7
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 833,
+    "criterion": "Negative methacholine inhalation challenge as performed in the screening protocol. (Less than a 20% decrease in FEV1 at a maximum methacholine concentration of 10 mg/ml)",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 4 year old boy presents to the emergency room with wheezing.",
+      "1": "He has had a history of allergic rhinitis, but no history of wheezing.",
+      "2": "His mother reports that 5 hours ago patient was playing in the backyard sandbox when she heard him suddenly start coughing.",
+      "3": "The coughing lasted only moments, but he has been audibly wheezing since.",
+      "4": "Mother was concerned, because his breathing has not returned to normal, so she brought him to the ED.",
+      "5": "On exam, the child is playful and well appearing.",
+      "6": "Wheezing is heard in the mid-right chest area.",
+      "7": "O2 sats are 100% on room air.",
+      "8": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 834,
+    "criterion": "--Negative pregnancy test for females",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 4 year old boy presents to the emergency room with wheezing.",
+      "1": "He has had a history of allergic rhinitis, but no history of wheezing.",
+      "2": "His mother reports that 5 hours ago patient was playing in the backyard sandbox when she heard him suddenly start coughing.",
+      "3": "The coughing lasted only moments, but he has been audibly wheezing since.",
+      "4": "Mother was concerned, because his breathing has not returned to normal, so she brought him to the ED.",
+      "5": "On exam, the child is playful and well appearing.",
+      "6": "Wheezing is heard in the mid-right chest area.",
+      "7": "O2 sats are 100% on room air.",
+      "8": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not applicable",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 836,
+    "criterion": "History of episodic wheezing, chest tightness, or shortness of breath after age of 6 years consistent with asthma, or physician diagnosed asthma after age of 6 years.",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 4 year old boy presents to the emergency room with wheezing.",
+      "1": "He has had a history of allergic rhinitis, but no history of wheezing.",
+      "2": "His mother reports that 5 hours ago patient was playing in the backyard sandbox when she heard him suddenly start coughing.",
+      "3": "The coughing lasted only moments, but he has been audibly wheezing since.",
+      "4": "Mother was concerned, because his breathing has not returned to normal, so she brought him to the ED.",
+      "5": "On exam, the child is playful and well appearing.",
+      "6": "Wheezing is heard in the mid-right chest area.",
+      "7": "O2 sats are 100% on room air.",
+      "8": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not included",
+      "evidence": [
+        0,
+        1
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 838,
+    "criterion": "FEV1 of at least 80% of predicted and FEV1/FVC ratio of at least .70 (without use of bronchodilating medications for 12 hours)",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 4 year old boy presents to the emergency room with wheezing.",
+      "1": "He has had a history of allergic rhinitis, but no history of wheezing.",
+      "2": "His mother reports that 5 hours ago patient was playing in the backyard sandbox when she heard him suddenly start coughing.",
+      "3": "The coughing lasted only moments, but he has been audibly wheezing since.",
+      "4": "Mother was concerned, because his breathing has not returned to normal, so she brought him to the ED.",
+      "5": "On exam, the child is playful and well appearing.",
+      "6": "Wheezing is heard in the mid-right chest area.",
+      "7": "O2 sats are 100% on room air.",
+      "8": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 839,
+    "criterion": "Allergic sensitization to at least one of the following allergen preparations: (House Dust Mite f, House dust mite p, Cockroach, Tree mix, Grass Mix, Weed Mix, Mold Mix 1, Mold Mix 2, Rat, Mouse, Guinea Pig, Rabbit, Cat or Dog) confirmed by positive AST.",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 4 year old boy presents to the emergency room with wheezing.",
+      "1": "He has had a history of allergic rhinitis, but no history of wheezing.",
+      "2": "His mother reports that 5 hours ago patient was playing in the backyard sandbox when she heard him suddenly start coughing.",
+      "3": "The coughing lasted only moments, but he has been audibly wheezing since.",
+      "4": "Mother was concerned, because his breathing has not returned to normal, so she brought him to the ED.",
+      "5": "On exam, the child is playful and well appearing.",
+      "6": "Wheezing is heard in the mid-right chest area.",
+      "7": "O2 sats are 100% on room air.",
+      "8": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": [
+        1
+      ]
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    }
+  },
+  {
+    "id": 847,
+    "criterion": "Pregnancy or nursing a baby.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 4 year old boy presents to the emergency room with wheezing.",
+      "1": "He has had a history of allergic rhinitis, but no history of wheezing.",
+      "2": "His mother reports that 5 hours ago patient was playing in the backyard sandbox when she heard him suddenly start coughing.",
+      "3": "The coughing lasted only moments, but he has been audibly wheezing since.",
+      "4": "Mother was concerned, because his breathing has not returned to normal, so she brought him to the ED.",
+      "5": "On exam, the child is playful and well appearing.",
+      "6": "Wheezing is heard in the mid-right chest area.",
+      "7": "O2 sats are 100% on room air.",
+      "8": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not applicable",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 848,
+    "criterion": "Cigarette smoking > 1 pack per month.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 4 year old boy presents to the emergency room with wheezing.",
+      "1": "He has had a history of allergic rhinitis, but no history of wheezing.",
+      "2": "His mother reports that 5 hours ago patient was playing in the backyard sandbox when she heard him suddenly start coughing.",
+      "3": "The coughing lasted only moments, but he has been audibly wheezing since.",
+      "4": "Mother was concerned, because his breathing has not returned to normal, so she brought him to the ED.",
+      "5": "On exam, the child is playful and well appearing.",
+      "6": "Wheezing is heard in the mid-right chest area.",
+      "7": "O2 sats are 100% on room air.",
+      "8": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not applicable",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 849,
+    "criterion": "Nighttime symptoms of cough or wheeze greater than 1x/week at baseline (not during a clearly recognized viral induced asthma exacerbation) which would be characteristic of a person of moderate or severe persistent asthma as outlined in the current NHLBI guidelines for diagnosis and management of asthma.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 4 year old boy presents to the emergency room with wheezing.",
+      "1": "He has had a history of allergic rhinitis, but no history of wheezing.",
+      "2": "His mother reports that 5 hours ago patient was playing in the backyard sandbox when she heard him suddenly start coughing.",
+      "3": "The coughing lasted only moments, but he has been audibly wheezing since.",
+      "4": "Mother was concerned, because his breathing has not returned to normal, so she brought him to the ED.",
+      "5": "On exam, the child is playful and well appearing.",
+      "6": "Wheezing is heard in the mid-right chest area.",
+      "7": "O2 sats are 100% on room air.",
+      "8": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": [
+        0,
+        3,
+        6
+      ]
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  },
+  {
+    "id": 850,
+    "criterion": "Exacerbation of asthma more than 2x/week which would be characteristic of a person of moderate or severe persistent asthma as outlined in the current NHLBI guidelines for diagnosis and management of asthma.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 4 year old boy presents to the emergency room with wheezing.",
+      "1": "He has had a history of allergic rhinitis, but no history of wheezing.",
+      "2": "His mother reports that 5 hours ago patient was playing in the backyard sandbox when she heard him suddenly start coughing.",
+      "3": "The coughing lasted only moments, but he has been audibly wheezing since.",
+      "4": "Mother was concerned, because his breathing has not returned to normal, so she brought him to the ED.",
+      "5": "On exam, the child is playful and well appearing.",
+      "6": "Wheezing is heard in the mid-right chest area.",
+      "7": "O2 sats are 100% on room air.",
+      "8": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not excluded",
+      "evidence": [
+        0,
+        1,
+        3,
+        6
+      ]
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": []
+    }
+  }
+]

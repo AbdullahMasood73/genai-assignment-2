@@ -1,0 +1,95 @@
+[
+  {
+    "input": 32,
+    "output": 4,
+    "mode": "uncached",
+    "prefill_s": 0.0076512000523507595,
+    "decode_s": 0.022831799928098917,
+    "tokens_s": 131.22068046338637,
+    "peak_rss_mib": 332.859375,
+    "equal": true
+  },
+  {
+    "input": 32,
+    "output": 4,
+    "mode": "cached",
+    "prefill_s": 0.006172899971716106,
+    "decode_s": 0.016215700074099004,
+    "tokens_s": 178.66235458289327,
+    "peak_rss_mib": 333.453125,
+    "equal": true
+  },
+  {
+    "input": 32,
+    "output": 4,
+    "mode": "speculative",
+    "end_to_end_s": 0.05092740000691265,
+    "tokens_s": 78.54318106671573,
+    "peak_rss_mib": 334.1328125,
+    "accepted": 1,
+    "proposed": 7,
+    "equal": true
+  },
+  {
+    "input": 96,
+    "output": 8,
+    "mode": "uncached",
+    "prefill_s": 0.011934599955566227,
+    "decode_s": 0.09058270009700209,
+    "tokens_s": 78.0356095595358,
+    "peak_rss_mib": 340.97265625,
+    "equal": true
+  },
+  {
+    "input": 96,
+    "output": 8,
+    "mode": "cached",
+    "prefill_s": 0.012153899995610118,
+    "decode_s": 0.042290200013667345,
+    "tokens_s": 146.9397051037077,
+    "peak_rss_mib": 341.08203125,
+    "equal": true
+  },
+  {
+    "input": 96,
+    "output": 8,
+    "mode": "speculative",
+    "end_to_end_s": 0.13143169996328652,
+    "tokens_s": 60.86811630858218,
+    "peak_rss_mib": 338.2109375,
+    "accepted": 2,
+    "proposed": 22,
+    "equal": true
+  },
+  {
+    "input": 192,
+    "output": 16,
+    "mode": "uncached",
+    "prefill_s": 0.028077500057406723,
+    "decode_s": 0.3974205000558868,
+    "tokens_s": 37.60299694884541,
+    "peak_rss_mib": 347.2421875,
+    "equal": true
+  },
+  {
+    "input": 192,
+    "output": 16,
+    "mode": "cached",
+    "prefill_s": 0.02169840002898127,
+    "decode_s": 0.1090645999647677,
+    "tokens_s": 122.35877121788938,
+    "peak_rss_mib": 347.265625,
+    "equal": true
+  },
+  {
+    "input": 192,
+    "output": 16,
+    "mode": "speculative",
+    "end_to_end_s": 0.20163400005549192,
+    "tokens_s": 79.35169661662528,
+    "peak_rss_mib": 347.41015625,
+    "accepted": 7,
+    "proposed": 39,
+    "equal": true
+  }
+]

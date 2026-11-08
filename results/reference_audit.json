@@ -1,0 +1,20 @@
+[
+  {
+    "length": 5,
+    "max_abs_logit_error": 0.0018040835857391357,
+    "mean_abs_logit_error": 0.00011586023174459115,
+    "same_argmax_positions": 5
+  },
+  {
+    "length": 32,
+    "max_abs_logit_error": 0.0018100738525390625,
+    "mean_abs_logit_error": 0.00012919101573061198,
+    "same_argmax_positions": 32
+  },
+  {
+    "length": 96,
+    "max_abs_logit_error": 0.002459287643432617,
+    "mean_abs_logit_error": 0.00014013484178576618,
+    "same_argmax_positions": 96
+  }
+]

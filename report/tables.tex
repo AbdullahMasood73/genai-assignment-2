@@ -1,0 +1,64 @@
+\begin{table}[ht]\centering\caption{Paired classification and evidence scores}\label{tab:scores}\small\begin{tabular}{lrrrrr}
+\hline
+Split & Model & Acc. & Macro-F1 & Ev. micro & Ev. macro\\\hline
+Validation & base & 0.189 & 0.127 & 0.116 & 0.524\\
+Validation & adapted & 0.621 & 0.219 & 0.000 & 0.563\\
+Test & base & 0.228 & 0.145 & 0.144 & 0.590\\
+Test & adapted & 0.612 & 0.222 & 0.000 & 0.704\\
+\hline\end{tabular}\end{table}
+Table~\ref{tab:scores} shows that supervised adaptation improves classification on both splits while eliminating positive evidence retrieval. The high macro evidence score arises from correctly empty sets.
+\begin{table}[ht]\centering\caption{Adapted test classification by criterion type}\label{tab:type}\small\begin{tabular}{lrrr}
+\hline
+Group & Rows & Accuracy & Macro-F1\\\hline
+all & 206 & 0.612 & 0.222\\
+inclusion & 75 & 0.507 & 0.168\\
+exclusion & 131 & 0.672 & 0.202\\
+\hline\end{tabular}\end{table}
+Table~\ref{tab:type} shows stronger exclusion accuracy. The model frequently predicts not excluded in this group.
+\begin{table}[ht]\centering\caption{Adapted test performance by expert category}\label{tab:classes}\small\begin{tabular}{lrrrr}
+\hline
+Class & Support & Precision & Recall & F1\\\hline
+included & 27 & 0.000 & 0.000 & 0.000\\
+not included & 7 & 0.000 & 0.000 & 0.000\\
+excluded & 0 & 0.000 & 0.000 & 0.000\\
+not excluded & 91 & 0.693 & 0.967 & 0.807\\
+not enough information & 66 & 0.481 & 0.576 & 0.524\\
+not applicable & 15 & 0.000 & 0.000 & 0.000\\
+\hline\end{tabular}\end{table}
+Table~\ref{tab:classes} shows that all correctly classified cases come from two labels. Excluded has no test support. Full per-type tables and confusion matrices are included as machine-readable metrics.
+\begin{table}[ht]\centering\caption{Adapted test confusion matrix; class order follows Table~\ref{tab:classes}}\label{tab:matrix}\small\begin{tabular}{lrrrrrr}
+\hline
+Gold / pred. & A & B & C & D & E & F\\\hline
+A & 0 & 0 & 0 & 0 & 27 & 0\\
+B & 0 & 0 & 0 & 0 & 7 & 0\\
+C & 0 & 0 & 0 & 0 & 0 & 0\\
+D & 0 & 0 & 0 & 88 & 3 & 0\\
+E & 0 & 0 & 0 & 28 & 38 & 0\\
+F & 0 & 0 & 0 & 11 & 4 & 0\\
+\hline\end{tabular}\end{table}
+Table~\ref{tab:matrix} locates the largest systematic mistakes. Every included and not-included example is assigned insufficient information.
+\begin{table}[ht]\centering\caption{Generation timing in milliseconds and peak process RSS}\label{tab:runtime}\small\begin{tabular}{lrrrrr}
+\hline
+In/out & Path & Prefill & Decode & Tok/s & MiB\\\hline
+32/4 & uncached & 7.7 & 22.8 & 131.2 & 333\\
+32/4 & cached & 6.2 & 16.2 & 178.7 & 333\\
+32/4 & speculative & -- & -- & 78.5 & 334\\
+96/8 & uncached & 11.9 & 90.6 & 78.0 & 341\\
+96/8 & cached & 12.2 & 42.3 & 146.9 & 341\\
+96/8 & speculative & -- & -- & 60.9 & 338\\
+192/16 & uncached & 28.1 & 397.4 & 37.6 & 347\\
+192/16 & cached & 21.7 & 109.1 & 122.4 & 347\\
+192/16 & speculative & -- & -- & 79.4 & 347\\
+\hline\end{tabular}\end{table}
+Table~\ref{tab:runtime} shows token agreement in all cases (logs include the assertions). Caching helps most on the longest prefix. Draft acceptance was 1/7, 2/22 and 7/39. Verification overhead made speculation slower than cached greedy at all three lengths.
+\begin{table}[ht]\centering\caption{Attention agreement and CPU runtime (milliseconds)}\label{tab:attention}\small\begin{tabular}{lrrrrr}
+\hline
+Length & Causal & Max err. & Mean err. & Full & Tiled\\\hline
+17 & yes & 3.6e-07 & 2.8e-08 & 0.19 & 0.79\\
+17 & no & 3.6e-07 & 3.4e-08 & 0.35 & 0.48\\
+65 & yes & 4.8e-07 & 3.0e-08 & 0.47 & 3.73\\
+65 & no & 3.6e-07 & 2.7e-08 & 0.35 & 3.48\\
+256 & yes & 3.6e-07 & 2.7e-08 & 2.60 & 15.85\\
+256 & no & 3.6e-07 & 2.4e-08 & 1.13 & 17.50\\
+\hline\end{tabular}\end{table}
+Table~\ref{tab:attention} shows FP32 agreement across causal and unmasked shapes. Python block dispatch dominates at these lengths. The score tile has at most 32 by 32 entries per head; process RSS includes retained buffers and does not directly measure this saving.
