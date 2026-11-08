@@ -2,6 +2,18 @@
 
 Muhammad Abdullah Masood · I230756 · Generative AI Assignment 2
 
+## Where to find everything
+
+| Item | Location |
+|---|---|
+| Original assignment question | [GenAI_Assignment#2.pdf](GenAI_Assignment%232.pdf) in the local folder and submission ZIP |
+| Written answer and experiment discussion | [report/paper.pdf](report/paper.pdf) |
+| Editable LaTeX paper | [report/paper.tex](report/paper.tex) |
+| Working application | [Start-Screening.cmd](Start-Screening.cmd) |
+| Recorded demonstration | [demo.mp4](demo.mp4) |
+| Patient split and experiment outputs | [data/manifest.json](data/manifest.json) and [results/](results/) |
+| Implementation | Python scripts and index.html at the project root |
+
 ## Start the application
 
 Extract the entire submission ZIP to a writable folder on Windows. Install 64-bit Python 3.12 with its Windows launcher if needed. Double-click **Start-Screening.cmd**. On the first run the launcher installs dependencies in a local environment and verifies the base checkpoint. Allow several minutes and internet access for this step. When ready it opens http://127.0.0.1:8764 in your browser. Keep the launcher window open while using the app. Close it to stop the server. Later launches reuse the environment.
