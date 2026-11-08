@@ -10,3 +10,6 @@ base/model.safetensors
 base70/model.safetensors
 experiments/**/*.pt
 PLAN.md
+experiments/*.log.tmp
+experiments/app_*.log
+experiments/record.log
