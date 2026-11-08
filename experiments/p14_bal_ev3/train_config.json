@@ -1,0 +1,14 @@
+{
+  "base": "base",
+  "epochs": 8,
+  "lr": 0.0003,
+  "accumulate": 4,
+  "class_weight": "balanced",
+  "evidence_weight": 3.0,
+  "schedule": "linear",
+  "threads": 3,
+  "seed": 42,
+  "out": "experiments/p14_bal_ev3",
+  "trainable_parameters": 1203584,
+  "total_parameters": 7642496
+}

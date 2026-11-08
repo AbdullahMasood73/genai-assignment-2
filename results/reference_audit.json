@@ -1,20 +1,44 @@
 [
   {
+    "model": "Pythia-14M",
     "length": 5,
-    "max_abs_logit_error": 0.0018040835857391357,
-    "mean_abs_logit_error": 0.00011586023174459115,
+    "max_abs_logit_error": 0.001088857650756836,
+    "mean_abs_logit_error": 0.00010081254004035145,
     "same_argmax_positions": 5
   },
   {
+    "model": "Pythia-14M",
     "length": 32,
     "max_abs_logit_error": 0.0018100738525390625,
     "mean_abs_logit_error": 0.00012919101573061198,
     "same_argmax_positions": 32
   },
   {
+    "model": "Pythia-14M",
     "length": 96,
     "max_abs_logit_error": 0.002459287643432617,
     "mean_abs_logit_error": 0.00014013484178576618,
+    "same_argmax_positions": 96
+  },
+  {
+    "model": "Pythia-70M",
+    "length": 5,
+    "max_abs_logit_error": 0.0020751953125,
+    "mean_abs_logit_error": 0.0003217180201318115,
+    "same_argmax_positions": 5
+  },
+  {
+    "model": "Pythia-70M",
+    "length": 32,
+    "max_abs_logit_error": 0.00732421875,
+    "mean_abs_logit_error": 0.000654167088214308,
+    "same_argmax_positions": 32
+  },
+  {
+    "model": "Pythia-70M",
+    "length": 96,
+    "max_abs_logit_error": 0.00775146484375,
+    "mean_abs_logit_error": 0.0009402872528880835,
     "same_argmax_positions": 96
   }
 ]

@@ -1,5 +1,11 @@
 {
-  "checkpoint_sha256": "41168f6461b9d1e771cb875679f06e8c877c29477bb187bfa580cf7f0a192e13",
-  "selection": "maximum validation six-label macro-F1; first epoch on ties",
-  "decoding": "constrained greedy"
+  "frozen_utc": "2026-11-08T13:14:26+00:00",
+  "target": "Pythia-70M (adapted)",
+  "checkpoint": "results/adaptation.pt",
+  "checkpoint_sha256": "0f2fa792ae8eee700deb02834710eef365dc99403f5d7c7e3dc95cbcc7d01dc1",
+  "base_revision": "a39f36b100fe8a5377810d56c3f4789b9c53ac42",
+  "selection": "maximum validation selection score = mean(macro-F1 over present classes, evidence micro-F1)",
+  "end_bias": 0,
+  "decoding": "constrained greedy, max 102 symbols, no sampling",
+  "note": "Written before the test split is scored. Nothing below is tuned on test."
 }

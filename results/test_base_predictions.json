@@ -2,39 +2,37 @@
   {
     "label": "included",
     "evidence": [
-      2
+      1
     ]
   },
   {
     "label": "included",
     "evidence": [
-      2
+      1
     ]
   },
   {
     "label": "included",
     "evidence": [
-      1,
-      2,
-      3
+      1
     ]
   },
   {
     "label": "included",
     "evidence": [
-      2
+      1
     ]
   },
   {
     "label": "included",
     "evidence": [
-      2
+      1
     ]
   },
   {
     "label": "included",
     "evidence": [
-      2
+      1
     ]
   },
   {
@@ -52,54 +50,6 @@
   {
     "label": "excluded",
     "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "included",
-    "evidence": [
-      2
-    ]
-  },
-  {
-    "label": "included",
-    "evidence": [
-      2
-    ]
-  },
-  {
-    "label": "included",
-    "evidence": [
-      2
-    ]
-  },
-  {
-    "label": "included",
-    "evidence": [
-      2
-    ]
   },
   {
     "label": "excluded",
@@ -128,52 +78,25 @@
   {
     "label": "included",
     "evidence": [
-      5
+      1
     ]
   },
   {
     "label": "included",
     "evidence": [
-      5
+      1
     ]
   },
   {
     "label": "included",
     "evidence": [
-      2,
-      3,
-      4,
-      5
+      1
     ]
   },
   {
     "label": "included",
     "evidence": [
-      5
-    ]
-  },
-  {
-    "label": "included",
-    "evidence": [
-      5
-    ]
-  },
-  {
-    "label": "included",
-    "evidence": [
-      5
-    ]
-  },
-  {
-    "label": "included",
-    "evidence": [
-      5
-    ]
-  },
-  {
-    "label": "included",
-    "evidence": [
-      5
+      1
     ]
   },
   {
@@ -183,12 +106,6 @@
   {
     "label": "excluded",
     "evidence": []
-  },
-  {
-    "label": "included",
-    "evidence": [
-      5
-    ]
   },
   {
     "label": "excluded",
@@ -209,49 +126,109 @@
   {
     "label": "included",
     "evidence": [
-      1,
-      2,
-      3,
-      4,
-      5
+      1
     ]
   },
   {
     "label": "included",
     "evidence": [
-      2,
-      3,
-      4,
-      5
+      1
     ]
   },
   {
     "label": "included",
     "evidence": [
-      1,
-      2,
-      3,
-      4,
-      5
+      1
     ]
   },
   {
     "label": "included",
     "evidence": [
-      2,
-      3,
-      4,
-      5
+      1
     ]
   },
   {
     "label": "included",
     "evidence": [
-      1,
-      2,
-      3,
-      4,
-      5
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": []
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": []
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
     ]
   },
   {
@@ -313,29 +290,19 @@
   {
     "label": "included",
     "evidence": [
-      1,
-      2,
-      3,
-      4,
-      5
+      1
     ]
   },
   {
     "label": "included",
     "evidence": [
-      2,
-      3,
-      4,
-      5
+      1
     ]
   },
   {
     "label": "included",
     "evidence": [
-      2,
-      3,
-      4,
-      5
+      1
     ]
   },
   {
@@ -345,64 +312,43 @@
   {
     "label": "included",
     "evidence": [
-      1,
-      2,
-      3,
-      4
+      1
     ]
   },
   {
     "label": "included",
     "evidence": [
-      1,
-      2,
-      3,
-      4
+      1
     ]
   },
   {
     "label": "included",
     "evidence": [
-      1,
-      2,
-      3,
-      4
+      1
     ]
   },
   {
     "label": "included",
     "evidence": [
-      1,
-      2,
-      3,
-      4
+      1
     ]
   },
   {
     "label": "included",
     "evidence": [
-      1,
-      2,
-      3,
-      4
+      1
     ]
   },
   {
     "label": "included",
     "evidence": [
-      1,
-      2,
-      3,
-      4
+      1
     ]
   },
   {
     "label": "included",
     "evidence": [
-      1,
-      2,
-      3,
-      4
+      1
     ]
   },
   {
@@ -434,7 +380,19 @@
     "evidence": []
   },
   {
+    "label": "not enough information",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": []
+  },
+  {
     "label": "excluded",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
     "evidence": []
   },
   {
@@ -462,39 +420,27 @@
     "evidence": []
   },
   {
-    "label": "excluded",
+    "label": "not enough information",
     "evidence": []
   },
   {
-    "label": "excluded",
+    "label": "not enough information",
     "evidence": []
   },
   {
-    "label": "excluded",
+    "label": "not enough information",
     "evidence": []
   },
   {
-    "label": "excluded",
+    "label": "not enough information",
     "evidence": []
   },
   {
-    "label": "excluded",
+    "label": "not enough information",
     "evidence": []
   },
   {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
+    "label": "not enough information",
     "evidence": []
   },
   {
@@ -508,11 +454,150 @@
   {
     "label": "included",
     "evidence": [
-      1,
-      2,
-      3,
-      4
+      1
     ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": []
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": []
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": []
+  },
+  {
+    "label": "excluded",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": []
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "excluded",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": []
+  },
+  {
+    "label": "excluded",
+    "evidence": []
+  },
+  {
+    "label": "not applicable",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "not applicable",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "excluded",
+    "evidence": []
+  },
+  {
+    "label": "excluded",
+    "evidence": []
   },
   {
     "label": "excluded",
@@ -521,19 +606,13 @@
   {
     "label": "included",
     "evidence": [
-      5
+      1
     ]
   },
   {
     "label": "included",
     "evidence": [
-      5
-    ]
-  },
-  {
-    "label": "included",
-    "evidence": [
-      5
+      1
     ]
   },
   {
@@ -545,22 +624,76 @@
     "evidence": []
   },
   {
+    "label": "excluded",
+    "evidence": []
+  },
+  {
+    "label": "excluded",
+    "evidence": []
+  },
+  {
+    "label": "excluded",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": []
+  },
+  {
+    "label": "excluded",
+    "evidence": []
+  },
+  {
     "label": "included",
     "evidence": [
-      5
+      1
     ]
   },
   {
     "label": "included",
     "evidence": [
-      5
+      1
     ]
   },
   {
     "label": "included",
     "evidence": [
-      5
+      1
     ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "excluded",
+    "evidence": []
+  },
+  {
+    "label": "excluded",
+    "evidence": []
+  },
+  {
+    "label": "excluded",
+    "evidence": []
+  },
+  {
+    "label": "excluded",
+    "evidence": []
   },
   {
     "label": "excluded",
@@ -625,35 +758,87 @@
     ]
   },
   {
-    "label": "not excluded",
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "excluded",
     "evidence": []
   },
   {
-    "label": "not excluded",
+    "label": "excluded",
     "evidence": []
   },
   {
-    "label": "not excluded",
+    "label": "excluded",
     "evidence": []
   },
   {
-    "label": "not excluded",
+    "label": "excluded",
     "evidence": []
   },
   {
-    "label": "not excluded",
+    "label": "not applicable",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "excluded",
     "evidence": []
   },
   {
-    "label": "not excluded",
+    "label": "excluded",
     "evidence": []
   },
   {
-    "label": "not excluded",
+    "label": "excluded",
     "evidence": []
   },
   {
-    "label": "not excluded",
+    "label": "excluded",
+    "evidence": []
+  },
+  {
+    "label": "excluded",
+    "evidence": []
+  },
+  {
+    "label": "excluded",
+    "evidence": []
+  },
+  {
+    "label": "excluded",
+    "evidence": []
+  },
+  {
+    "label": "excluded",
+    "evidence": []
+  },
+  {
+    "label": "excluded",
+    "evidence": []
+  },
+  {
+    "label": "excluded",
+    "evidence": []
+  },
+  {
+    "label": "excluded",
     "evidence": []
   },
   {
@@ -669,403 +854,199 @@
     ]
   },
   {
-    "label": "not excluded",
-    "evidence": []
-  },
-  {
-    "label": "not excluded",
-    "evidence": []
-  },
-  {
-    "label": "not excluded",
-    "evidence": []
-  },
-  {
-    "label": "not excluded",
-    "evidence": []
-  },
-  {
-    "label": "not excluded",
-    "evidence": []
-  },
-  {
-    "label": "not excluded",
-    "evidence": []
-  },
-  {
-    "label": "not excluded",
+    "label": "not enough information",
     "evidence": []
   },
   {
     "label": "included",
     "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "included",
+    "evidence": [
+      1
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0,
       1,
       2,
       3,
-      4
+      4,
+      5,
+      6,
+      7,
+      8
     ]
   },
   {
-    "label": "included",
+    "label": "not enough information",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
     "evidence": [
+      0,
       1,
       2,
       3,
-      4
+      4,
+      5,
+      6,
+      7,
+      8
     ]
   },
   {
-    "label": "included",
+    "label": "excluded",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
     "evidence": [
+      0,
       1,
       2,
       3,
-      4
+      4,
+      5,
+      6,
+      7,
+      8
     ]
   },
   {
-    "label": "included",
+    "label": "not enough information",
     "evidence": [
+      0,
       1,
       2,
       3,
-      4
+      4,
+      5,
+      6,
+      7,
+      8
     ]
   },
   {
-    "label": "included",
+    "label": "not enough information",
     "evidence": [
+      0,
       1,
       2,
       3,
-      4
+      4,
+      5,
+      6,
+      7,
+      8
     ]
   },
   {
-    "label": "included",
+    "label": "not enough information",
     "evidence": [
+      0,
       1,
       2,
       3,
-      4
+      4,
+      5,
+      6,
+      7,
+      8
     ]
   },
   {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "not excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "included",
+    "label": "not enough information",
     "evidence": [
+      0,
       1,
       2,
       3,
-      4
+      4,
+      5,
+      6,
+      7,
+      8
     ]
   },
   {
-    "label": "included",
-    "evidence": [
-      1,
-      2,
-      3,
-      4
-    ]
-  },
-  {
-    "label": "included",
-    "evidence": [
-      2
-    ]
-  },
-  {
-    "label": "included",
-    "evidence": [
-      4
-    ]
-  },
-  {
-    "label": "included",
-    "evidence": [
-      1,
-      2,
-      3,
-      4
-    ]
-  },
-  {
-    "label": "included",
-    "evidence": [
-      1,
-      2,
-      3,
-      4
-    ]
-  },
-  {
-    "label": "included",
-    "evidence": [
-      1,
-      2,
-      3,
-      4
-    ]
-  },
-  {
-    "label": "included",
-    "evidence": [
-      1,
-      2,
-      3,
-      4
-    ]
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "not excluded",
-    "evidence": []
-  },
-  {
-    "label": "not excluded",
-    "evidence": []
-  },
-  {
-    "label": "included",
-    "evidence": [
-      2
-    ]
-  },
-  {
-    "label": "included",
-    "evidence": [
-      2
-    ]
-  },
-  {
-    "label": "not excluded",
-    "evidence": []
-  },
-  {
-    "label": "included",
-    "evidence": [
-      2
-    ]
-  },
-  {
-    "label": "included",
-    "evidence": [
-      2
-    ]
-  },
-  {
-    "label": "included",
-    "evidence": [
-      2
-    ]
-  },
-  {
-    "label": "included",
-    "evidence": [
-      2
-    ]
-  },
-  {
-    "label": "included",
-    "evidence": [
-      2
-    ]
-  },
-  {
-    "label": "included",
-    "evidence": [
-      2
-    ]
-  },
-  {
-    "label": "included",
-    "evidence": [
-      2
-    ]
-  },
-  {
-    "label": "included",
-    "evidence": [
-      2
-    ]
-  },
-  {
-    "label": "included",
-    "evidence": [
-      2
-    ]
-  },
-  {
-    "label": "included",
-    "evidence": [
-      2
-    ]
-  },
-  {
-    "label": "included",
-    "evidence": [
-      2
-    ]
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "not excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "not excluded",
-    "evidence": []
-  },
-  {
-    "label": "not excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": [
-      0
-    ]
-  },
-  {
-    "label": "not excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
-    "evidence": []
-  },
-  {
-    "label": "not excluded",
-    "evidence": []
-  },
-  {
-    "label": "not excluded",
-    "evidence": []
-  },
-  {
-    "label": "not excluded",
-    "evidence": []
-  },
-  {
-    "label": "excluded",
+    "label": "not enough information",
     "evidence": []
   }
 ]

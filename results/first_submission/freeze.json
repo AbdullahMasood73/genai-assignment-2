@@ -1,0 +1,5 @@
+{
+  "checkpoint_sha256": "41168f6461b9d1e771cb875679f06e8c877c29477bb187bfa580cf7f0a192e13",
+  "selection": "maximum validation six-label macro-F1; first epoch on ties",
+  "decoding": "constrained greedy"
+}

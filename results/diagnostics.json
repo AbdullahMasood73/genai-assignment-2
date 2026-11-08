@@ -1,0 +1,50 @@
+{
+  "SmallBase": {
+    "evidence_auc": 0.4570273003033367,
+    "inclusion:included": 0.6119815668202765,
+    "inclusion:not included": 0.8148148148148149,
+    "inclusion:not enough information": 0.7635327635327636,
+    "inclusion:not applicable": 0.5692307692307692,
+    "exclusion:excluded": 0.49275362318840576,
+    "exclusion:not excluded": 0.4737242955064737,
+    "exclusion:not enough information": 0.4453441295546559,
+    "exclusion:not applicable": 0.2903453136011276,
+    "mean_label_auc": 0.5577159095311609
+  },
+  "SmallFirst": {
+    "evidence_auc": 0.6607853050219076,
+    "inclusion:included": 0.5188940092165899,
+    "inclusion:not included": 0.417989417989418,
+    "inclusion:not enough information": 0.4890788224121557,
+    "inclusion:not applicable": 0.46153846153846156,
+    "exclusion:excluded": 0.3840579710144928,
+    "exclusion:not excluded": 0.46610814927646604,
+    "exclusion:not enough information": 0.4908906882591093,
+    "exclusion:not applicable": 0.4418604651162791,
+    "mean_label_auc": 0.45880224810287157
+  },
+  "LargeBase": {
+    "evidence_auc": 0.5146949780923491,
+    "inclusion:included": 0.56036866359447,
+    "inclusion:not included": 0.6481481481481481,
+    "inclusion:not enough information": 0.5061728395061729,
+    "inclusion:not applicable": 0.9076923076923076,
+    "exclusion:excluded": 0.2590579710144928,
+    "exclusion:not excluded": 0.4942878903274943,
+    "exclusion:not enough information": 0.5700067476383266,
+    "exclusion:not applicable": 0.47674418604651164,
+    "mean_label_auc": 0.5528098442459906
+  },
+  "LargeFinal": {
+    "evidence_auc": 0.6904701718907988,
+    "inclusion:included": 0.7105990783410139,
+    "inclusion:not included": 0.2804232804232804,
+    "inclusion:not enough information": 0.6799620132953466,
+    "inclusion:not applicable": 0.2615384615384615,
+    "exclusion:excluded": 0.30434782608695654,
+    "exclusion:not excluded": 0.6491495303376491,
+    "exclusion:not enough information": 0.5843454790823213,
+    "exclusion:not applicable": 0.7392529950669485,
+    "mean_label_auc": 0.5262023330214972
+  }
+}

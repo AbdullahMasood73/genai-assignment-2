@@ -1,0 +1,18 @@
+Loading models...
+Ready: http://127.0.0.1:8764/  (keep this window open; close it to stop the server)
+[08/Nov/2026 17:15:51] "GET /health HTTP/1.1" 200 -
+[08/Nov/2026 17:15:51] "GET /health HTTP/1.1" 200 -
+[08/Nov/2026 17:15:52] "POST /screen HTTP/1.1" 200 -
+[08/Nov/2026 17:15:52] "POST /screen HTTP/1.1" 400 -
+[08/Nov/2026 17:15:57] "POST /benchmark HTTP/1.1" 200 -
+[08/Nov/2026 17:15:57] "POST /attention HTTP/1.1" 200 -
+[08/Nov/2026 17:15:58] "GET /logs HTTP/1.1" 200 -
+[08/Nov/2026 17:16:06] "GET / HTTP/1.1" 200 -
+[08/Nov/2026 17:16:06] "GET /health HTTP/1.1" 200 -
+[08/Nov/2026 17:16:06] "GET /health HTTP/1.1" 200 -
+[08/Nov/2026 17:16:06] code 404, message Not Found
+[08/Nov/2026 17:16:06] "GET /favicon.ico HTTP/1.1" 404 -
+[08/Nov/2026 17:16:12] "POST /screen HTTP/1.1" 200 -
+[08/Nov/2026 17:16:31] "GET /logs HTTP/1.1" 200 -
+[08/Nov/2026 17:16:33] "POST /benchmark HTTP/1.1" 200 -
+[08/Nov/2026 17:16:41] "POST /attention HTTP/1.1" 200 -

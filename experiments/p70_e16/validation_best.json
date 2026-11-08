@@ -1,0 +1,974 @@
+[
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not applicable",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not applicable",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not applicable",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not applicable",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not applicable",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  },
+  {
+    "label": "not excluded",
+    "evidence": []
+  }
+]

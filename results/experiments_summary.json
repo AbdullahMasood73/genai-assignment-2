@@ -1,0 +1,65 @@
+{
+  "first_submission": {
+    "description": "14M, unweighted (original submission), lr 2e-4, 4 ep",
+    "epochs_completed": 4,
+    "best_epoch": 4,
+    "accuracy": 0.6213592233009708,
+    "macro_f1_present": 0.21894044360334786,
+    "evidence_micro_f1": 0.0,
+    "selection": 0.10947022180167393
+  },
+  "p14_bal_ev3": {
+    "description": "14M, balanced^0.5, ev+stop x3, lr 3e-4",
+    "epochs_completed": 3,
+    "best_epoch": 1,
+    "accuracy": 0.6213592233009708,
+    "macro_f1_present": 0.21532596441066054,
+    "evidence_micro_f1": 0.0,
+    "selection": 0.10766298220533027
+  },
+  "p14_none_ev3": {
+    "description": "14M, unweighted, ev+stop x3, lr 3e-4",
+    "epochs_completed": 3,
+    "best_epoch": 1,
+    "accuracy": 0.6213592233009708,
+    "macro_f1_present": 0.21532596441066054,
+    "evidence_micro_f1": 0.0,
+    "selection": 0.10766298220533027
+  },
+  "r2_p14_lr3e-4": {
+    "description": "14M, balanced^0.5, ev x5, lr 3e-4",
+    "epochs_completed": 6,
+    "best_epoch": 3,
+    "accuracy": 0.616504854368932,
+    "macro_f1_present": 0.21314203999343603,
+    "evidence_micro_f1": 0.016666666666666666,
+    "selection": 0.11490435333005135
+  },
+  "r2_p14_lr1e-3": {
+    "description": "14M, balanced^0.5, ev x5, lr 1e-3",
+    "epochs_completed": 6,
+    "best_epoch": 5,
+    "accuracy": 0.6262135922330098,
+    "macro_f1_present": 0.21805555555555556,
+    "evidence_micro_f1": 0.0,
+    "selection": 0.10902777777777778
+  },
+  "final_p70": {
+    "description": "70M, balanced^1, ev x5, lr 2e-4, 10 ep",
+    "epochs_completed": 10,
+    "best_epoch": 10,
+    "accuracy": 0.6504854368932039,
+    "macro_f1_present": 0.32831009146798623,
+    "evidence_micro_f1": 0.25,
+    "selection": 0.2891550457339931
+  },
+  "p70_e16": {
+    "description": "70M, balanced^1, ev x5, lr 2e-4, 16 ep",
+    "epochs_completed": 16,
+    "best_epoch": 9,
+    "accuracy": 0.6310679611650486,
+    "macro_f1_present": 0.27695716293975553,
+    "evidence_micro_f1": 0.35978835978835977,
+    "selection": 0.3183727613640577
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "base": "base70",
+  "epochs": 8,
+  "lr": 0.0001,
+  "accumulate": 4,
+  "class_weight": "balanced",
+  "evidence_weight": 3.0,
+  "schedule": "linear",
+  "threads": 2,
+  "seed": 42,
+  "out": "experiments/p70_bal_ev3",
+  "trainable_parameters": 18970112,
+  "total_parameters": 44725760
+}

@@ -1,23 +1,33 @@
 [
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not excluded",
@@ -61,7 +71,9 @@
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not excluded",
@@ -85,11 +97,15 @@
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not excluded",
@@ -104,7 +120,7 @@
     "evidence": []
   },
   {
-    "label": "not enough information",
+    "label": "not excluded",
     "evidence": []
   },
   {
@@ -125,15 +141,21 @@
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not excluded",
@@ -149,11 +171,15 @@
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not excluded",
@@ -168,12 +194,16 @@
     "evidence": []
   },
   {
-    "label": "not enough information",
-    "evidence": []
+    "label": "not applicable",
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not excluded",
@@ -184,7 +214,7 @@
     "evidence": []
   },
   {
-    "label": "not enough information",
+    "label": "not excluded",
     "evidence": []
   },
   {
@@ -205,35 +235,51 @@
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not excluded",
@@ -260,7 +306,7 @@
     "evidence": []
   },
   {
-    "label": "not enough information",
+    "label": "not excluded",
     "evidence": []
   },
   {
@@ -329,19 +375,27 @@
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not excluded",
@@ -368,28 +422,38 @@
     "evidence": []
   },
   {
-    "label": "not excluded",
-    "evidence": []
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not excluded",
     "evidence": []
   },
   {
-    "label": "not enough information",
-    "evidence": []
+    "label": "not applicable",
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not excluded",
@@ -397,35 +461,51 @@
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not excluded",
@@ -452,8 +532,10 @@
     "evidence": []
   },
   {
-    "label": "not excluded",
-    "evidence": []
+    "label": "not enough information",
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not excluded",
@@ -461,11 +543,15 @@
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not excluded",
@@ -477,11 +563,15 @@
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not excluded",
@@ -516,8 +606,10 @@
     "evidence": []
   },
   {
-    "label": "not excluded",
-    "evidence": []
+    "label": "not applicable",
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not excluded",
@@ -525,23 +617,33 @@
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not excluded",
@@ -584,8 +686,10 @@
     "evidence": []
   },
   {
-    "label": "not enough information",
-    "evidence": []
+    "label": "not applicable",
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not excluded",
@@ -593,15 +697,21 @@
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not excluded",
@@ -637,19 +747,27 @@
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not excluded",
@@ -700,8 +818,10 @@
     "evidence": []
   },
   {
-    "label": "not enough information",
-    "evidence": []
+    "label": "not applicable",
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not excluded",
@@ -709,47 +829,69 @@
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not excluded",
@@ -761,15 +903,21 @@
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not enough information",
-    "evidence": []
+    "evidence": [
+      0
+    ]
   },
   {
     "label": "not excluded",

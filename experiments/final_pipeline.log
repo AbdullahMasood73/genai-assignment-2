@@ -1,0 +1,51 @@
+== calibrate
+{'end_bias': 1, 'evidence_micro': [0.48333333333333334, 0.25217391304347825, 0.3314285714285714], 'evidence_macro': [0.6359223300970874, 0.6152912621359223, 0.6208737864077669], 'predicted_evidence_records': 60}
+{'end_bias': 0.5, 'evidence_micro': [0.45714285714285713, 0.2782608695652174, 0.34594594594594597], 'evidence_macro': [0.6213592233009708, 0.5983009708737864, 0.6046925566343042], 'predicted_evidence_records': 70}
+{'end_bias': 0, 'evidence_micro': [0.4594594594594595, 0.2956521739130435, 0.35978835978835977], 'evidence_macro': [0.6213592233009708, 0.5950647249190939, 0.6022653721682848], 'predicted_evidence_records': 74}
+{'end_bias': -0.5, 'evidence_micro': [0.21686746987951808, 0.3130434782608696, 0.25622775800711745], 'evidence_macro': [0.526294498381877, 0.5076860841423949, 0.5085067036523346], 'predicted_evidence_records': 96}
+{'end_bias': -1, 'evidence_micro': [0.11659192825112108, 0.45217391304347826, 0.18538324420677363], 'evidence_macro': [0.35008090614886733, 0.39482200647249194, 0.34508784096162737], 'predicted_evidence_records': 154}
+{'end_bias': -1.5, 'evidence_micro': [0.10664819944598337, 0.6695652173913044, 0.18399044205495818], 'evidence_macro': [0.21547041146555715, 0.3875404530744337, 0.2510209585452303], 'predicted_evidence_records': 182}
+{'end_bias': -2, 'evidence_micro': [0.09462616822429906, 0.7043478260869566, 0.16683831101956745], 'evidence_macro': [0.12410425335182615, 0.3414239482200648, 0.1680690399137001], 'predicted_evidence_records': 198}
+{'end_bias': -2.5, 'evidence_micro': [0.09288990825688073, 0.7043478260869566, 0.1641337386018237], 'evidence_macro': [0.1046867776236708, 0.32200647249190945, 0.14865156418554476], 'predicted_evidence_records': 204}
+{'end_bias': -3, 'evidence_micro': [0.09339407744874716, 0.7130434782608696, 0.16515609264853978], 'evidence_macro': [0.10145053166897826, 0.32200647249190945, 0.14622437971952534], 'predicted_evidence_records': 206}
+{'end_bias': -3.5, 'evidence_micro': [0.09339407744874716, 0.7130434782608696, 0.16515609264853978], 'evidence_macro': [0.10145053166897826, 0.32200647249190945, 0.14622437971952534], 'predicted_evidence_records': 206}
+{'end_bias': -4, 'evidence_micro': [0.09339407744874716, 0.7130434782608696, 0.16515609264853978], 'evidence_macro': [0.10145053166897826, 0.32200647249190945, 0.14622437971952534], 'predicted_evidence_records': 206}
+{'end_bias': -5, 'evidence_micro': [0.09339407744874716, 0.7130434782608696, 0.16515609264853978], 'evidence_macro': [0.10145053166897826, 0.32200647249190945, 0.14622437971952534], 'predicted_evidence_records': 206}
+{'end_bias': -6, 'evidence_micro': [0.09339407744874716, 0.7130434782608696, 0.16515609264853978], 'evidence_macro': [0.10145053166897826, 0.32200647249190945, 0.14622437971952534], 'predicted_evidence_records': 206}
+selected end_bias 0
+== distill
+{'epoch': 0, 'validation_agreement': 0.4207650273224044}
+{'epoch': 1, 'loss': 0.8420261172963859, 'seconds': 23.79744839994237, 'validation_agreement': 0.8633879781420765}
+{'epoch': 2, 'loss': 0.6257348152103017, 'seconds': 24.19598620000761, 'validation_agreement': 0.9890710382513661}
+{'epoch': 3, 'loss': 0.612910800559406, 'seconds': 25.02473100007046, 'validation_agreement': 0.8633879781420765}
+{'epoch': 4, 'loss': 0.6012413866484343, 'seconds': 25.787726999958977, 'validation_agreement': 0.9836065573770492}
+== final
+{'split': 'validation', 'model': 'majority', 'accuracy': 0.6213592233009708, 'macro_f1': 0.21532596441066054, 'macro_f1_present': 0.21532596441066054, 'inclusion_accuracy': 0.4090909090909091, 'exclusion_accuracy': 0.7214285714285714, 'evidence_micro_p': 0.0, 'evidence_micro_r': 0.0, 'evidence_micro_f1': 0.0, 'evidence_macro_f1': 0.5631067961165048, 'evidence_macro_f1_nonempty': 0.0}
+{'split': 'validation', 'model': 'base', 'accuracy': 0.2087378640776699, 'macro_f1': 0.14691668821533568, 'macro_f1_present': 0.14691668821533568, 'inclusion_accuracy': 0.5303030303030303, 'exclusion_accuracy': 0.05714285714285714, 'evidence_micro_p': 0.10227272727272728, 'evidence_micro_r': 0.0782608695652174, 'evidence_micro_f1': 0.08866995073891626, 'evidence_macro_f1': 0.46812297734627834, 'evidence_macro_f1_nonempty': 0.07148148148148148}
+{'split': 'validation', 'model': 'adapted0', 'accuracy': 0.6310679611650486, 'macro_f1': 0.27695716293975553, 'macro_f1_present': 0.27695716293975553, 'inclusion_accuracy': 0.4090909090909091, 'exclusion_accuracy': 0.7357142857142858, 'evidence_micro_p': 0.4594594594594595, 'evidence_micro_r': 0.2956521739130435, 'evidence_micro_f1': 0.35978835978835977, 'evidence_macro_f1': 0.6022653721682848, 'evidence_macro_f1_nonempty': 0.334074074074074}
+{'split': 'validation', 'model': 'adapted', 'accuracy': 0.6310679611650486, 'macro_f1': 0.27695716293975553, 'macro_f1_present': 0.27695716293975553, 'inclusion_accuracy': 0.4090909090909091, 'exclusion_accuracy': 0.7357142857142858, 'evidence_micro_p': 0.4594594594594595, 'evidence_micro_r': 0.2956521739130435, 'evidence_micro_f1': 0.35978835978835977, 'evidence_macro_f1': 0.6022653721682848, 'evidence_macro_f1_nonempty': 0.334074074074074}
+{'split': 'test', 'model': 'majority', 'accuracy': 0.6262135922330098, 'macro_f1': 0.2264711520030669, 'macro_f1_present': 0.27176538240368026, 'inclusion_accuracy': 0.5066666666666667, 'exclusion_accuracy': 0.6946564885496184, 'evidence_micro_p': 0.0, 'evidence_micro_r': 0.0, 'evidence_micro_f1': 0.0, 'evidence_macro_f1': 0.7038834951456311, 'evidence_macro_f1_nonempty': 0.0}
+{'split': 'test', 'model': 'base', 'accuracy': 0.1941747572815534, 'macro_f1': 0.14413699020625903, 'macro_f1_present': 0.17296438824751084, 'inclusion_accuracy': 0.36, 'exclusion_accuracy': 0.09923664122137404, 'evidence_micro_p': 0.09929078014184398, 'evidence_micro_r': 0.14893617021276595, 'evidence_micro_f1': 0.11914893617021277, 'evidence_macro_f1': 0.548941996514812, 'evidence_macro_f1_nonempty': 0.08331231609920134}
+{'split': 'test', 'model': 'adapted0', 'accuracy': 0.6310679611650486, 'macro_f1': 0.27854620649761613, 'macro_f1_present': 0.3342554477971394, 'inclusion_accuracy': 0.5066666666666667, 'exclusion_accuracy': 0.7022900763358778, 'evidence_micro_p': 0.3150684931506849, 'evidence_micro_r': 0.24468085106382978, 'evidence_micro_f1': 0.2754491017964072, 'evidence_macro_f1': 0.6346278317152104, 'evidence_macro_f1_nonempty': 0.33989071038251367}
+{'split': 'test', 'model': 'adapted', 'accuracy': 0.6310679611650486, 'macro_f1': 0.27854620649761613, 'macro_f1_present': 0.3342554477971394, 'inclusion_accuracy': 0.5066666666666667, 'exclusion_accuracy': 0.7022900763358778, 'evidence_micro_p': 0.3150684931506849, 'evidence_micro_r': 0.24468085106382978, 'evidence_micro_f1': 0.2754491017964072, 'evidence_macro_f1': 0.6346278317152104, 'evidence_macro_f1_nonempty': 0.33989071038251367}
+== diagnose
+SmallBase 0.558 0.457
+SmallFirst 0.459 0.661
+LargeBase 0.553 0.515
+LargeFinal 0.526 0.69
+== benchmark
+32 8 early_exit [('uncached', 190.8), ('cached', 65.3), ('speculative', 161.5)]
+32 8 pythia14m [('uncached', 196.0), ('cached', 67.2), ('speculative', 77.9)]
+256 32 early_exit [('uncached', 2873.8), ('cached', 308.2), ('speculative', 336.1)]
+256 32 pythia14m [('uncached', 2837.4), ('cached', 300.3), ('speculative', 704.0)]
+1024 64 early_exit [('uncached', 25144.2), ('cached', 1060.6), ('speculative', 1124.9)]
+1024 64 pythia14m [('uncached', 25397.3), ('cached', 1076.3), ('speculative', 2143.7)]
+saved results/benchmark_log.json
+== verify
+PASS split 37/8/8 re-derived from parquet, patient-disjoint, 1015 rows; inputs allowlisted (excluded columns: ['gpt4_explanation', 'gpt4_sentences', 'gpt4_eligibility'])
+PASS chunked cached logits match full recompute (max |diff| 7.3e-04); cache grows by fed length; trim == fresh prefix
+PASS cached greedy == uncached greedy on 16 prompts (12 real screening outputs + 4 controlled lengths)
+PASS speculative == target greedy for drafts ['early_exit', 'pythia14m'] (forced accept/reject/stop, widths 1-8, real outputs)
+PASS reference and tiled attention match FP64 SDPA on 48 configurations (max |err| 8.1e-07); stable for large logits
+PASS app: original IDs kept, blank lines ignored, three-mode agreement, rules R1-R4, 14 invalid requests rejected
+All 6 check groups passed.

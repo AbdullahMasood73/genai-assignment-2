@@ -1,0 +1,23 @@
+{
+  "base": "base70",
+  "epochs": 10,
+  "lr": 0.0002,
+  "accumulate": 4,
+  "class_weight": "balanced",
+  "balance_power": 1.0,
+  "evidence_weight": 5.0,
+  "schedule": "linear",
+  "threads": 7,
+  "seed": 42,
+  "out": "experiments/final_p70",
+  "trainable_parameters": 18970112,
+  "total_parameters": 44725760,
+  "label_weights": [
+    1.142045497894287,
+    7.730769157409668,
+    12.5625,
+    0.34417808055877686,
+    0.5775862336158752,
+    3.5892856121063232
+  ]
+}

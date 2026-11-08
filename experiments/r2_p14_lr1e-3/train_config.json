@@ -1,0 +1,14 @@
+{
+  "base": "base",
+  "epochs": 8,
+  "lr": 0.001,
+  "accumulate": 4,
+  "class_weight": "balanced",
+  "evidence_weight": 5.0,
+  "schedule": "linear",
+  "threads": 2,
+  "seed": 42,
+  "out": "experiments/r2_p14_lr1e-3",
+  "trainable_parameters": 1203584,
+  "total_parameters": 7642496
+}

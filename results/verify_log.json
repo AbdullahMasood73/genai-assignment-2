@@ -1,0 +1,8 @@
+[
+  "split 37/8/8 re-derived from parquet, patient-disjoint, 1015 rows; inputs allowlisted (excluded columns: ['gpt4_explanation', 'gpt4_sentences', 'gpt4_eligibility'])",
+  "chunked cached logits match full recompute (max |diff| 7.3e-04); cache grows by fed length; trim == fresh prefix",
+  "cached greedy == uncached greedy on 16 prompts (12 real screening outputs + 4 controlled lengths)",
+  "speculative == target greedy for drafts ['early_exit', 'pythia14m'] (forced accept/reject/stop, widths 1-8, real outputs)",
+  "reference and tiled attention match FP64 SDPA on 48 configurations (max |err| 8.1e-07); stable for large logits",
+  "app: original IDs kept, blank lines ignored, three-mode agreement, rules R1-R5, 14 invalid requests rejected"
+]

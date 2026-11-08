@@ -1,0 +1,72 @@
+[
+  {
+    "split": "test",
+    "model": "majority",
+    "accuracy": 0.6262135922330098,
+    "macro_f1": 0.2264711520030669,
+    "macro_f1_present": 0.27176538240368026,
+    "inclusion_accuracy": 0.5066666666666667,
+    "exclusion_accuracy": 0.6946564885496184,
+    "evidence_micro_p": 0.0,
+    "evidence_micro_r": 0.0,
+    "evidence_micro_f1": 0.0,
+    "evidence_macro_f1": 0.7038834951456311,
+    "evidence_macro_f1_nonempty": 0.0
+  },
+  {
+    "split": "test",
+    "model": "lead",
+    "accuracy": 0.6262135922330098,
+    "macro_f1": 0.2264711520030669,
+    "macro_f1_present": 0.27176538240368026,
+    "inclusion_accuracy": 0.5066666666666667,
+    "exclusion_accuracy": 0.6946564885496184,
+    "evidence_micro_p": 0.18446601941747573,
+    "evidence_micro_r": 0.40425531914893614,
+    "evidence_micro_f1": 0.25333333333333335,
+    "evidence_macro_f1": 0.15048543689320387,
+    "evidence_macro_f1_nonempty": 0.5081967213114754
+  },
+  {
+    "split": "test",
+    "model": "base",
+    "accuracy": 0.1941747572815534,
+    "macro_f1": 0.14413699020625903,
+    "macro_f1_present": 0.17296438824751084,
+    "inclusion_accuracy": 0.36,
+    "exclusion_accuracy": 0.09923664122137404,
+    "evidence_micro_p": 0.09929078014184398,
+    "evidence_micro_r": 0.14893617021276595,
+    "evidence_micro_f1": 0.11914893617021277,
+    "evidence_macro_f1": 0.548941996514812,
+    "evidence_macro_f1_nonempty": 0.08331231609920134
+  },
+  {
+    "split": "test",
+    "model": "adapted0",
+    "accuracy": 0.6310679611650486,
+    "macro_f1": 0.27854620649761613,
+    "macro_f1_present": 0.3342554477971394,
+    "inclusion_accuracy": 0.5066666666666667,
+    "exclusion_accuracy": 0.7022900763358778,
+    "evidence_micro_p": 0.3150684931506849,
+    "evidence_micro_r": 0.24468085106382978,
+    "evidence_micro_f1": 0.2754491017964072,
+    "evidence_macro_f1": 0.6346278317152104,
+    "evidence_macro_f1_nonempty": 0.33989071038251367
+  },
+  {
+    "split": "test",
+    "model": "adapted",
+    "accuracy": 0.6310679611650486,
+    "macro_f1": 0.27854620649761613,
+    "macro_f1_present": 0.3342554477971394,
+    "inclusion_accuracy": 0.5066666666666667,
+    "exclusion_accuracy": 0.7022900763358778,
+    "evidence_micro_p": 0.3150684931506849,
+    "evidence_micro_r": 0.24468085106382978,
+    "evidence_micro_f1": 0.2754491017964072,
+    "evidence_macro_f1": 0.6346278317152104,
+    "evidence_macro_f1_nonempty": 0.33989071038251367
+  }
+]

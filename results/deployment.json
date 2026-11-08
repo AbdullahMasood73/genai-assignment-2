@@ -1,0 +1,21 @@
+{
+  "target_name": "Pythia-70M (adapted)",
+  "target": {
+    "base": "base70",
+    "checkpoint": "results/adaptation.pt"
+  },
+  "drafts": {
+    "early_exit": {
+      "base": "base70",
+      "checkpoint": "results/adaptation.pt",
+      "layers": 2
+    },
+    "pythia14m": {
+      "base": "base",
+      "checkpoint": "results/draft14m.pt"
+    }
+  },
+  "draft": "early_exit",
+  "width": 4,
+  "end_bias": 0
+}

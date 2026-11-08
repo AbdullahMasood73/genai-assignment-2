@@ -1,6 +1,7 @@
 [
   {
     "id": 159,
+    "patient": "sigir-201410",
     "criterion": "Age greater than 18 years",
     "type": "inclusion",
     "sentences": {
@@ -17,11 +18,17 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 160,
+    "patient": "sigir-201410",
     "criterion": "Patient willing to give full informed consent for participation",
     "type": "inclusion",
     "sentences": {
@@ -38,11 +45,21 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [
+      3
+    ],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 161,
+    "patient": "sigir-201410",
     "criterion": "Patients undergoing elective carotid endarterectomy",
     "type": "inclusion",
     "sentences": {
@@ -57,11 +74,19 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 162,
+    "patient": "sigir-201410",
     "criterion": "Patients undergoing open abdominal aortic aneurysm repair",
     "type": "inclusion",
     "sentences": {
@@ -76,11 +101,19 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 163,
+    "patient": "sigir-201410",
     "criterion": "Patients undergoing endovascular abdominal aneurysm repair",
     "type": "inclusion",
     "sentences": {
@@ -95,11 +128,19 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 164,
+    "patient": "sigir-201410",
     "criterion": "Patients undergoing surgical lower limb revascularisation (suprainguinal or infrainguinal)",
     "type": "inclusion",
     "sentences": {
@@ -114,11 +155,19 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 165,
+    "patient": "sigir-201410",
     "criterion": "Pregnancy",
     "type": "exclusion",
     "sentences": {
@@ -132,12 +181,47 @@
       "evidence": []
     },
     "prediction": {
+      "label": "not applicable",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
+  },
+  {
+    "id": 166,
+    "patient": "sigir-201410",
+    "criterion": "Significant upper limb peripheral arterial disease",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+      "1": "She is now complaining of a cool right foot.",
+      "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 169,
+    "patient": "sigir-201410",
     "criterion": "Patients with an estimated pre-operative glomerular filtration rate < 30mls/min/1.73m2",
     "type": "exclusion",
     "sentences": {
@@ -153,10 +237,68 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
+  },
+  {
+    "id": 171,
+    "patient": "sigir-201410",
+    "criterion": "Patients with severe hepatic disease defined as an international normalised ratio >2 in the absence of systemic anticoagulation",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+      "1": "She is now complaining of a cool right foot.",
+      "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not excluded",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
+  },
+  {
+    "id": 172,
+    "patient": "sigir-201410",
+    "criterion": "Patients with severe respiratory disease (for the trial, defined as patients requiring home oxygen therapy)",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+      "1": "She is now complaining of a cool right foot.",
+      "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not excluded",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 174,
+    "patient": "sigir-201410",
     "criterion": "Patients with previous axillary surgery",
     "type": "exclusion",
     "sentences": {
@@ -172,10 +314,41 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
+  },
+  {
+    "id": 175,
+    "patient": "sigir-201410",
+    "criterion": "Chronic renal failure requiring hemodialysis.",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A physician is called to see a 67-year-old woman who underwent cardiac catheterization via the right femoral artery earlier in the morning.",
+      "1": "She is now complaining of a cool right foot.",
+      "2": "Upon examination she has a pulsatile mass in her right groin with loss of distal pulses, and auscultation reveals a bruit over the point at which the right femoral artery was entered.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 176,
+    "patient": "sigir-201410",
     "criterion": "No medical history of central vena catheterization.",
     "type": "inclusion",
     "sentences": {
@@ -192,11 +365,17 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 177,
+    "patient": "sigir-201410",
     "criterion": "Maintenance hemodialysis after central vena catheterization.",
     "type": "inclusion",
     "sentences": {
@@ -211,11 +390,19 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 178,
+    "patient": "sigir-201410",
     "criterion": "Signed informed consent.",
     "type": "inclusion",
     "sentences": {
@@ -232,11 +419,21 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [
+      3
+    ],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 179,
+    "patient": "sigir-201410",
     "criterion": "Had been performed central venous puncture or catheterization before.",
     "type": "exclusion",
     "sentences": {
@@ -254,10 +451,16 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": false,
+    "missing_evidence": [
+      0
+    ],
+    "spurious_evidence": []
   },
   {
     "id": 181,
+    "patient": "sigir-201410",
     "criterion": "Refused to sign the informed consent.",
     "type": "exclusion",
     "sentences": {
@@ -275,10 +478,16 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": false,
+    "missing_evidence": [
+      3
+    ],
+    "spurious_evidence": []
   },
   {
     "id": 185,
+    "patient": "sigir-201411",
     "criterion": "Patients were included if they were diagnosed with Shock, Acute respiratory distress syndrome (ARDS), or both.",
     "type": "inclusion",
     "sentences": {
@@ -298,11 +507,22 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [
+      2,
+      3
+    ],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 186,
+    "patient": "sigir-201411",
     "criterion": "Heart rate of at least 90/min;",
     "type": "inclusion",
     "sentences": {
@@ -321,11 +541,21 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [
+      2
+    ],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 187,
+    "patient": "sigir-201411",
     "criterion": "A respiratory rate of at least 20/min or a PaCO2 of 32mmHg or lower or the use of mechanical ventilation;",
     "type": "inclusion",
     "sentences": {
@@ -344,11 +574,21 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [
+      2
+    ],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 188,
+    "patient": "sigir-201411",
     "criterion": "The use of vasopressors to maintain a systolic blood pressure of at least 90mmHg despite fluid resuscitation, low dose of dopamine (\u2264 5 \u03bcg/kg per minute), or dobutamine;",
     "type": "inclusion",
     "sentences": {
@@ -367,11 +607,137 @@
     },
     "prediction": {
       "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [
+      3
+    ],
+    "spurious_evidence": [
+      0
+    ]
+  },
+  {
+    "id": 189,
+    "patient": "sigir-201411",
+    "criterion": "at least 1 of 3 signs of hypoperfusion (urine output < 0.5mL/kg of body weight per hour for 1 hour or more; neurologic dysfunction defined by confusion, psychosis, or a Glasgow coma scale score of \u2264 6; plasma lactate higher than the upper limit of the normal value).",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 40-year-old woman with no past medical history presents to the ER with excruciating pain in her right arm that had started 1 hour prior to her admission.",
+      "1": "She denies trauma.",
+      "2": "On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic.",
+      "3": "Her body temperature is normal and her blood pressure is 80/60.",
+      "4": "Her right arm has no discoloration or movement limitation.",
+      "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
       "evidence": []
-    }
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
+  },
+  {
+    "id": 190,
+    "patient": "sigir-201411",
+    "criterion": "the presence of acute decrease in PaO2/FIO2 to 200mmHg or lower,",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 40-year-old woman with no past medical history presents to the ER with excruciating pain in her right arm that had started 1 hour prior to her admission.",
+      "1": "She denies trauma.",
+      "2": "On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic.",
+      "3": "Her body temperature is normal and her blood pressure is 80/60.",
+      "4": "Her right arm has no discoloration or movement limitation.",
+      "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
+  },
+  {
+    "id": 191,
+    "patient": "sigir-201411",
+    "criterion": "bilateral pulmonary infiltrates or a chest radiograph consistent with edema;",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 40-year-old woman with no past medical history presents to the ER with excruciating pain in her right arm that had started 1 hour prior to her admission.",
+      "1": "She denies trauma.",
+      "2": "On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic.",
+      "3": "Her body temperature is normal and her blood pressure is 80/60.",
+      "4": "Her right arm has no discoloration or movement limitation.",
+      "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
+  },
+  {
+    "id": 192,
+    "patient": "sigir-201411",
+    "criterion": "no clinical evidence of left atrial hypertension; and requirement for positive pressure ventilation.",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 40-year-old woman with no past medical history presents to the ER with excruciating pain in her right arm that had started 1 hour prior to her admission.",
+      "1": "She denies trauma.",
+      "2": "On examination she is pale and in moderate discomfort, as well as tachypneic and tachycardic.",
+      "3": "Her body temperature is normal and her blood pressure is 80/60.",
+      "4": "Her right arm has no discoloration or movement limitation.",
+      "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 193,
+    "patient": "sigir-201411",
     "criterion": "Patients were moribund.",
     "type": "exclusion",
     "sentences": {
@@ -395,10 +761,20 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "spurious_evidence": []
   },
   {
     "id": 195,
+    "patient": "sigir-201411",
     "criterion": "Reported pain greater than or equal to 3 out of 10",
     "type": "inclusion",
     "sentences": {
@@ -417,11 +793,17 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 196,
+    "patient": "sigir-201411",
     "criterion": "Less than 18 years of age",
     "type": "exclusion",
     "sentences": {
@@ -441,10 +823,16 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": false,
+    "missing_evidence": [
+      0
+    ],
+    "spurious_evidence": []
   },
   {
     "id": 197,
+    "patient": "sigir-201411",
     "criterion": "Decreased level of consciousness",
     "type": "exclusion",
     "sentences": {
@@ -465,10 +853,17 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": false,
+    "missing_evidence": [
+      0,
+      5
+    ],
+    "spurious_evidence": []
   },
   {
     "id": 198,
+    "patient": "sigir-201411",
     "criterion": "Inability to answer questions",
     "type": "exclusion",
     "sentences": {
@@ -488,10 +883,16 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": false,
+    "missing_evidence": [
+      5
+    ],
+    "spurious_evidence": []
   },
   {
     "id": 304,
+    "patient": "sigir-201417",
     "criterion": "Patients of both sexes aged \u2265 18 years.",
     "type": "inclusion",
     "sentences": {
@@ -510,11 +911,46 @@
     },
     "prediction": {
       "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
+  },
+  {
+    "id": 305,
+    "patient": "sigir-201417",
+    "criterion": "Standard analytical parameters, defined by: Leukocytes \u2265 3000 Neutrophils \u2265 1500 Platelets \u2265 100,000 Aspartate aminotransferase (AST) / Alanine aminotransferase (ALT) \u2264 1.5 standard range institution creatinine \u2264 1.5 mg / dl",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 48-year-old white male with history of common variable immunodeficiency (CVID) with acute abdominal pain, fever, dehydration, HR of 132 bpm, BP 80/40.",
+      "1": "The physical examination is remarkable for tenderness and positive Murphy sign.",
+      "2": "Abdominal ultrasound shows hepatomegaly and abundant free intraperitoneal fluid.",
+      "3": "Exploratory laparotomy reveals a ruptured liver abscess, which is then surgically drained.",
+      "4": "After surgery, the patient is taken to the ICU.",
+      "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
       "evidence": []
-    }
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 306,
+    "patient": "sigir-201417",
     "criterion": "Patients with liver space occupying lesion (LOE) that require extended hepatic resection.",
     "type": "inclusion",
     "sentences": {
@@ -533,11 +969,21 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [
+      3
+    ],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 307,
+    "patient": "sigir-201417",
     "criterion": "Patient selection should be cautious, covering basically 5 types of liver damage which must be submitted prior to liver volumetry: Metastatic Disease subsidiary right hepatectomy extended to segment IV Metastatic Disease subsidiary right hepatectomy with suspected diseased liver (neoadjuvant chemotherapy) (in cases of doubt may be used liver function test indocyanine green) Bilobar liver metastases with multiple nodules in the right lobe and more than 3 nodules greater than 30 mm in the left hepatic lobe (LHI) will perform lumpectomies the LHI + right portal branch ligation (or postoperative percutaneous embolization) in order to make right hepatectomy 4-6 weeks (two stage surgery) Subsidiary Hepatocarcinoma extended right hepatectomy Liver Injury benign / malignant (Hemangiomas, hydatid cysts or liver tumors / primary bile hepatoblastoma), which by extension threatens the viability of the remaining liver tissue.",
     "type": "inclusion",
     "sentences": {
@@ -556,11 +1002,21 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [
+      3
+    ],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 308,
+    "patient": "sigir-201417",
     "criterion": "Patients give their written informed consent for participation in the study and provide sufficient guarantees adherence to protocol according to the opinion of the investigator in charge of the patient care.",
     "type": "inclusion",
     "sentences": {
@@ -579,11 +1035,50 @@
     },
     "prediction": {
       "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [
+      5
+    ],
+    "spurious_evidence": [
+      0
+    ]
+  },
+  {
+    "id": 312,
+    "patient": "sigir-201417",
+    "criterion": "Patients with malignant ventricular arrhythmias or unstable angina.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 48-year-old white male with history of common variable immunodeficiency (CVID) with acute abdominal pain, fever, dehydration, HR of 132 bpm, BP 80/40.",
+      "1": "The physical examination is remarkable for tenderness and positive Murphy sign.",
+      "2": "Abdominal ultrasound shows hepatomegaly and abundant free intraperitoneal fluid.",
+      "3": "Exploratory laparotomy reveals a ruptured liver abscess, which is then surgically drained.",
+      "4": "After surgery, the patient is taken to the ICU.",
+      "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not excluded",
       "evidence": []
-    }
+    },
+    "prediction": {
+      "label": "not excluded",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 315,
+    "patient": "sigir-201417",
     "criterion": "BMI> 40 kg/m2.",
     "type": "exclusion",
     "sentences": {
@@ -601,10 +1096,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 319,
+    "patient": "sigir-201417",
     "criterion": "Difficulty in monitoring.",
     "type": "exclusion",
     "sentences": {
@@ -624,10 +1123,16 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": false,
+    "missing_evidence": [
+      5
+    ],
+    "spurious_evidence": []
   },
   {
     "id": 322,
+    "patient": "sigir-201417",
     "criterion": "Pregnant women or women of childbearing age who do not have adequate contraception.",
     "type": "exclusion",
     "sentences": {
@@ -645,35 +1150,18 @@
       ]
     },
     "prediction": {
-      "label": "not enough information",
-      "evidence": []
-    }
-  },
-  {
-    "id": 323,
-    "criterion": "Immune Deficiency and early BMF in childhood",
-    "type": "inclusion",
-    "sentences": {
-      "0": "A 48-year-old white male with history of common variable immunodeficiency (CVID) with acute abdominal pain, fever, dehydration, HR of 132 bpm, BP 80/40.",
-      "1": "The physical examination is remarkable for tenderness and positive Murphy sign.",
-      "2": "Abdominal ultrasound shows hepatomegaly and abundant free intraperitoneal fluid.",
-      "3": "Exploratory laparotomy reveals a ruptured liver abscess, which is then surgically drained.",
-      "4": "After surgery, the patient is taken to the ICU.",
-      "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
-    },
-    "gold": {
-      "label": "not enough information",
+      "label": "not applicable",
       "evidence": [
         0
       ]
     },
-    "prediction": {
-      "label": "not enough information",
-      "evidence": []
-    }
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 324,
+    "patient": "sigir-201417",
     "criterion": "Common Variable Immunodeficiency (CVID)",
     "type": "inclusion",
     "sentences": {
@@ -692,11 +1180,46 @@
     },
     "prediction": {
       "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
+  },
+  {
+    "id": 325,
+    "patient": "sigir-201417",
+    "criterion": "Genetic patients",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 48-year-old white male with history of common variable immunodeficiency (CVID) with acute abdominal pain, fever, dehydration, HR of 132 bpm, BP 80/40.",
+      "1": "The physical examination is remarkable for tenderness and positive Murphy sign.",
+      "2": "Abdominal ultrasound shows hepatomegaly and abundant free intraperitoneal fluid.",
+      "3": "Exploratory laparotomy reveals a ruptured liver abscess, which is then surgically drained.",
+      "4": "After surgery, the patient is taken to the ICU.",
+      "5": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
       "evidence": []
-    }
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 326,
+    "patient": "sigir-201417",
     "criterion": "Refusal to consent.",
     "type": "exclusion",
     "sentences": {
@@ -716,10 +1239,16 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": false,
+    "missing_evidence": [
+      5
+    ],
+    "spurious_evidence": []
   },
   {
     "id": 381,
+    "patient": "sigir-201421",
     "criterion": "Age > 18 years at the time of signing the informed consent form",
     "type": "inclusion",
     "sentences": {
@@ -737,11 +1266,17 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 382,
+    "patient": "sigir-201421",
     "criterion": "Fulfil at least 4 criteria for SLE as defined by the American College of Rheumatology (ACR)",
     "type": "inclusion",
     "sentences": {
@@ -762,10 +1297,18 @@
     "prediction": {
       "label": "not enough information",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [
+      0,
+      1,
+      2
+    ],
+    "spurious_evidence": []
   },
   {
     "id": 383,
+    "patient": "sigir-201421",
     "criterion": "Present with active SLE disease with at least one of the following symptoms: i) Arthritis - > 2 joints with pain and signs of inflammation (i.e. tenderness, swelling, or effusion) ii) Inflammatory-type skin rash iii) Oral ulcers",
     "type": "inclusion",
     "sentences": {
@@ -784,11 +1327,47 @@
     },
     "prediction": {
       "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [
+      1
+    ],
+    "spurious_evidence": []
+  },
+  {
+    "id": 384,
+    "patient": "sigir-201421",
+    "criterion": "Laboratory values as follows Hemoglobin \u2265 100 g/L Absolute neutrophil count \u2265 1.0 x 109/L Total bilirubin \u2264 1.5 x upper limit of normal (ULN) AST (SGOT) / ALT (SGPT) \u2264 2.5 x ULN",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 21-year-old female is evaluated for progressive arthralgias and malaise.",
+      "1": "On examination she is found to have alopecia, a rash mainly distributed on the bridge of her nose and her cheeks, a delicate non-palpable purpura on her calves, and swelling and tenderness of her wrists and ankles.",
+      "2": "Her lab shows normocytic anemia, thrombocytopenia, a 4/4 positive ANA and anti-dsDNA.",
+      "3": "Her urine is positive for protein and RBC casts.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
       "evidence": []
-    }
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 385,
+    "patient": "sigir-201421",
     "criterion": "Ability to take and retain oral medication",
     "type": "inclusion",
     "sentences": {
@@ -806,11 +1385,21 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [
+      4
+    ],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 386,
+    "patient": "sigir-201421",
     "criterion": "Ability to sign and date a written informed consent prior to entering the study",
     "type": "inclusion",
     "sentences": {
@@ -828,11 +1417,21 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [
+      4
+    ],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 387,
+    "patient": "sigir-201421",
     "criterion": "Willingness and ability to comply with the protocol for the duration of the study",
     "type": "inclusion",
     "sentences": {
@@ -850,11 +1449,21 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [
+      4
+    ],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 388,
+    "patient": "sigir-201421",
     "criterion": "Active severe SLE flare with central nervous system (CNS) manifestations, active renal lupus, systemic vasculitis, active pericarditis, active pleuritis, active peritonitis or other SLE manifestations requiring treatment not allowed by the study protocol.",
     "type": "exclusion",
     "sentences": {
@@ -876,10 +1485,19 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": false,
+    "missing_evidence": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "spurious_evidence": []
   },
   {
     "id": 389,
+    "patient": "sigir-201421",
     "criterion": "Severe renal impairment (estimated or measured GFR <50%)",
     "type": "exclusion",
     "sentences": {
@@ -896,10 +1514,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 390,
+    "patient": "sigir-201421",
     "criterion": "Oral treatment with corticosteroids (>15 mg/day prednisolone or equivalent) or changes in corticosteroid dosing within 30 days prior to the first dose of study medication. This also includes intraarticular steroid injections or topical treatment for SLE symptoms. Inhaled or topical steroids may be given for reasons other than SLE disease activity (such as asthma, contact dermatitis) as clinically indicated.",
     "type": "exclusion",
     "sentences": {
@@ -916,10 +1538,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 391,
+    "patient": "sigir-201421",
     "criterion": "Intravenous corticosteroids within 3 months prior to the first dose of study medication.",
     "type": "exclusion",
     "sentences": {
@@ -936,10 +1562,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 392,
+    "patient": "sigir-201421",
     "criterion": "Intravenous cyclophosphamide within 6 months prior to the first dose of study medication.",
     "type": "exclusion",
     "sentences": {
@@ -956,10 +1586,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 393,
+    "patient": "sigir-201421",
     "criterion": "Treatment with anti-rheumatic/immunosuppressive drugs within 3 months prior to first dose of study medication, other than the following medications at stable doses: methotrexate (\u226425 mg/week), azathioprine (\u22642.5 mg/kg/day), hydroxychloroquine and mycophenolate mofetil (\u22643000 mg/day).",
     "type": "exclusion",
     "sentences": {
@@ -976,10 +1610,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 394,
+    "patient": "sigir-201421",
     "criterion": "B-cell depletion therapy (such as treatment with Rituximab) within 12 months prior to the first dose of study medication.",
     "type": "exclusion",
     "sentences": {
@@ -996,10 +1634,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 395,
+    "patient": "sigir-201421",
     "criterion": "Potent inhibitors or inducers of CYP3A4 intravenously or orally within 14 days prior to first dose of study medication.",
     "type": "exclusion",
     "sentences": {
@@ -1016,10 +1658,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 398,
+    "patient": "sigir-201421",
     "criterion": "History of additional risk factors for torsade de pointes (eg, heart failure, hypokalemia, family history of long QT syndrome)",
     "type": "exclusion",
     "sentences": {
@@ -1036,10 +1682,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 399,
+    "patient": "sigir-201421",
     "criterion": "Treatment with concomitant medications that prolong the QT interval.",
     "type": "exclusion",
     "sentences": {
@@ -1056,10 +1706,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 403,
+    "patient": "sigir-201421",
     "criterion": "Positive result on screening for hepatitis B surface antigen, hepatitis C antibodies or human immunodeficiency virus (HIV) antibodies.",
     "type": "exclusion",
     "sentences": {
@@ -1076,10 +1730,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 404,
+    "patient": "sigir-201421",
     "criterion": "Drug abuse.",
     "type": "exclusion",
     "sentences": {
@@ -1096,10 +1754,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 405,
+    "patient": "sigir-201421",
     "criterion": "Major surgery within 3 weeks prior to study entry.",
     "type": "exclusion",
     "sentences": {
@@ -1116,10 +1778,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 406,
+    "patient": "sigir-201421",
     "criterion": "Known or suspected hypersensitivity to ABR-215757 or excipients.",
     "type": "exclusion",
     "sentences": {
@@ -1136,10 +1802,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 407,
+    "patient": "sigir-201421",
     "criterion": "Female subject of child-bearing potential who is not using a medically accepted safe method of contraception. All female subjects of child-bearing potential must have a negative urine pregnancy test at the Screening and Baseline Visits. As interaction studies between ABR-215757 and oral contraceptives have not yet been performed, women using the contraceptive pill must also use a complementary contraceptive device, i.e. barrier method, during the treatment period and for at least 1 month thereafter.",
     "type": "exclusion",
     "sentences": {
@@ -1156,10 +1826,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 408,
+    "patient": "sigir-201421",
     "criterion": "Female subject of child-bearing potential who is pregnant or lactating.",
     "type": "exclusion",
     "sentences": {
@@ -1176,10 +1850,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 409,
+    "patient": "sigir-201421",
     "criterion": "Simultaneous participation or participation within 4 months or 5 half lives (whichever is longer) prior to study entry in any other study involving investigational drugs or other experimental therapy.",
     "type": "exclusion",
     "sentences": {
@@ -1196,10 +1874,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 410,
+    "patient": "sigir-201421",
     "criterion": "Other significant, unstable medical disease not related to SLE that in the investigator's opinion would confound the study result or put the patient at risk.",
     "type": "exclusion",
     "sentences": {
@@ -1216,10 +1898,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 411,
+    "patient": "sigir-201421",
     "criterion": "Patients likely to receive oral or intravenous steroids or immunosuppressant for other non-SLE condition during the study duration, as this will confound the study result.",
     "type": "exclusion",
     "sentences": {
@@ -1236,10 +1922,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 412,
+    "patient": "sigir-201421",
     "criterion": "Vaccination within 4 weeks prior to the first dose of study medication.",
     "type": "exclusion",
     "sentences": {
@@ -1256,10 +1946,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 413,
+    "patient": "sigir-201421",
     "criterion": "Patients with systemic Lupus erythematosus",
     "type": "inclusion",
     "sentences": {
@@ -1280,11 +1974,21 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [
+      1,
+      2,
+      3
+    ],
+    "spurious_evidence": []
   },
   {
     "id": 414,
+    "patient": "sigir-201421",
     "criterion": "Patients without systemic Lupus erythematosus",
     "type": "exclusion",
     "sentences": {
@@ -1306,10 +2010,19 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": false,
+    "missing_evidence": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "spurious_evidence": []
   },
   {
     "id": 415,
+    "patient": "sigir-201422",
     "criterion": "Age 8-18 years",
     "type": "inclusion",
     "sentences": {
@@ -1330,10 +2043,16 @@
     "prediction": {
       "label": "not enough information",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [
+      0
+    ],
+    "spurious_evidence": []
   },
   {
     "id": 416,
+    "patient": "sigir-201422",
     "criterion": "referred from emergency department for suspected appendicitis",
     "type": "inclusion",
     "sentences": {
@@ -1355,10 +2074,17 @@
     "prediction": {
       "label": "not enough information",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [
+      0,
+      5
+    ],
+    "spurious_evidence": []
   },
   {
     "id": 417,
+    "patient": "sigir-201422",
     "criterion": "receiving either CT scan or ultrasound of the abdomen for diagnosis",
     "type": "inclusion",
     "sentences": {
@@ -1379,10 +2105,16 @@
     "prediction": {
       "label": "not enough information",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [
+      5
+    ],
+    "spurious_evidence": []
   },
   {
     "id": 418,
+    "patient": "sigir-201422",
     "criterion": "Failure to pass MRI metal screening",
     "type": "exclusion",
     "sentences": {
@@ -1401,10 +2133,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 419,
+    "patient": "sigir-201422",
     "criterion": "Claustrophobia or need for sedation due to inability to hold still",
     "type": "exclusion",
     "sentences": {
@@ -1423,10 +2159,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 420,
+    "patient": "sigir-201422",
     "criterion": "Two or more symptoms of acute appendicitis for at least 24 hours or radiologic evidence of complicated appendicitis",
     "type": "inclusion",
     "sentences": {
@@ -1450,10 +2190,19 @@
     "prediction": {
       "label": "not enough information",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [
+      0,
+      1,
+      2,
+      5
+    ],
+    "spurious_evidence": []
   },
   {
     "id": 422,
+    "patient": "sigir-201422",
     "criterion": "If female, using birth control",
     "type": "inclusion",
     "sentences": {
@@ -1474,11 +2223,17 @@
     "prediction": {
       "label": "not enough information",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [
+      3
+    ],
+    "spurious_evidence": []
   },
   {
-    "id": 678,
-    "criterion": "Diagnosis of mild sleep-disordered breathing (MSDB) defined as meeting all of the following criteria: Caregiver report of habitual snoring that occurs most of the night on at least three nights per week, and has been present for at least three months (on average occurring > 3 nights per week or more half of sleep time)",
+    "id": 679,
+    "patient": "sigir-20158",
+    "criterion": "Centrally-scored polysomnogram (PSG) confirming an obstructive apnea index (OAI) <1/hour and apnea-hypopnea index (AHI) \u22643/hour and no oxygen saturation (SpO2) desaturation < 90% in conjunction with obstructive events, confirmed on PSG.",
     "type": "inclusion",
     "sentences": {
       "0": "A 10 yo boy with nighttime snoring, pauses in breathing, and restlessness with nighttime awakenings.",
@@ -1488,17 +2243,77 @@
     },
     "gold": {
       "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not enough information",
       "evidence": [
         0
       ]
     },
-    "prediction": {
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
+  },
+  {
+    "id": 680,
+    "patient": "sigir-20158",
+    "criterion": "Tonsillar hypertrophy \u22652 based on a standardized scale of 0-4.",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 10 yo boy with nighttime snoring, pauses in breathing, and restlessness with nighttime awakenings.",
+      "1": "No history of headache or night terrors.",
+      "2": "The boy's teacher recently contacted his parents because she was concerned about his declining grades, lack of attention, and excessive sleepiness during class.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
       "label": "not enough information",
       "evidence": []
-    }
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
+  },
+  {
+    "id": 681,
+    "patient": "sigir-20158",
+    "criterion": "Deemed to be a candidate for AT by otolaryngologist (ENT) evaluation (i.e., no technical issues that would be a contraindication for surgery such as submucous cleft palate.)",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 10 yo boy with nighttime snoring, pauses in breathing, and restlessness with nighttime awakenings.",
+      "1": "No history of headache or night terrors.",
+      "2": "The boy's teacher recently contacted his parents because she was concerned about his declining grades, lack of attention, and excessive sleepiness during class.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 682,
+    "patient": "sigir-20158",
     "criterion": "Primary indication for AT is nocturnal obstructive symptoms (i.e., not recurrent infections or other indications).",
     "type": "inclusion",
     "sentences": {
@@ -1515,11 +2330,17 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 683,
+    "patient": "sigir-20158",
     "criterion": "Previous tonsillectomy, including partial tonsillectomy",
     "type": "exclusion",
     "sentences": {
@@ -1535,10 +2356,37 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
+  },
+  {
+    "id": 686,
+    "patient": "sigir-20158",
+    "criterion": "Failure to thrive, defined as either height or weight being below the 5th percentile for age and gender.",
+    "type": "exclusion",
+    "sentences": {
+      "0": "A 10 yo boy with nighttime snoring, pauses in breathing, and restlessness with nighttime awakenings.",
+      "1": "No history of headache or night terrors.",
+      "2": "The boy's teacher recently contacted his parents because she was concerned about his declining grades, lack of attention, and excessive sleepiness during class.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not excluded",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 691,
+    "patient": "sigir-20158",
     "criterion": "Experiences symptoms of OSA, including snoring and sleepiness",
     "type": "inclusion",
     "sentences": {
@@ -1556,11 +2404,46 @@
     },
     "prediction": {
       "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [
+      2
+    ],
+    "spurious_evidence": []
+  },
+  {
+    "id": 692,
+    "patient": "sigir-20158",
+    "criterion": "Stable medical history with no change in medications that could affect sleepiness",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 10 yo boy with nighttime snoring, pauses in breathing, and restlessness with nighttime awakenings.",
+      "1": "No history of headache or night terrors.",
+      "2": "The boy's teacher recently contacted his parents because she was concerned about his declining grades, lack of attention, and excessive sleepiness during class.",
+      "3": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
       "evidence": []
-    }
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 693,
+    "patient": "sigir-20158",
     "criterion": "Suspected diagnosis of a sleep disorder other than OSA (i.e., periodic leg movements, narcolepsy, insomnia, central sleep apnea, sleep hypoventilation syndrome)",
     "type": "exclusion",
     "sentences": {
@@ -1576,10 +2459,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 697,
+    "patient": "sigir-20158",
     "criterion": "Pregnant",
     "type": "exclusion",
     "sentences": {
@@ -1593,12 +2480,20 @@
       "evidence": []
     },
     "prediction": {
-      "label": "not enough information",
-      "evidence": []
-    }
+      "label": "not applicable",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 698,
+    "patient": "sigir-20158",
     "criterion": "Inability to communicate verbally, write, or read",
     "type": "exclusion",
     "sentences": {
@@ -1616,32 +2511,16 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
-  },
-  {
-    "id": 741,
-    "criterion": "referring doctor suspects peritonsillar abscess",
-    "type": "inclusion",
-    "sentences": {
-      "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
-      "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
-      "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
-      "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
-      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
     },
-    "gold": {
-      "label": "not enough information",
-      "evidence": [
-        0
-      ]
-    },
-    "prediction": {
-      "label": "not enough information",
-      "evidence": []
-    }
+    "label_error": false,
+    "missing_evidence": [
+      3
+    ],
+    "spurious_evidence": []
   },
   {
     "id": 742,
+    "patient": "sigir-201513",
     "criterion": "patient is voluntary",
     "type": "inclusion",
     "sentences": {
@@ -1659,11 +2538,21 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [
+      4
+    ],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 743,
+    "patient": "sigir-201513",
     "criterion": "patient has daily access to his/her e-mail",
     "type": "inclusion",
     "sentences": {
@@ -1681,11 +2570,49 @@
     },
     "prediction": {
       "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [
+      4
+    ],
+    "spurious_evidence": [
+      0
+    ]
+  },
+  {
+    "id": 744,
+    "patient": "sigir-201513",
+    "criterion": "patient speaks and understands Finnish or Swedish",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
+      "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
+      "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
+      "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
       "evidence": []
-    }
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 745,
+    "patient": "sigir-201513",
     "criterion": "female patients have adequate birth-control method",
     "type": "inclusion",
     "sentences": {
@@ -1701,33 +2628,19 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
-  },
-  {
-    "id": 746,
-    "criterion": "patient has peritonsillar abscess",
-    "type": "inclusion",
-    "sentences": {
-      "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
-      "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
-      "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
-      "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
-      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
-    },
-    "gold": {
-      "label": "not enough information",
       "evidence": [
         0
       ]
     },
-    "prediction": {
-      "label": "not enough information",
-      "evidence": []
-    }
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 750,
+    "patient": "sigir-201513",
     "criterion": "pregnancy",
     "type": "exclusion",
     "sentences": {
@@ -1744,10 +2657,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 751,
+    "patient": "sigir-201513",
     "criterion": "breast-feeding",
     "type": "exclusion",
     "sentences": {
@@ -1764,10 +2681,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 754,
+    "patient": "sigir-201513",
     "criterion": "alcoholism (drunk at least once a week)",
     "type": "exclusion",
     "sentences": {
@@ -1784,10 +2705,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 756,
+    "patient": "sigir-201513",
     "criterion": "treatment of peritonsillar abscess requires in-patient care",
     "type": "exclusion",
     "sentences": {
@@ -1804,10 +2729,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 758,
+    "patient": "sigir-201513",
     "criterion": "army recruit",
     "type": "exclusion",
     "sentences": {
@@ -1824,10 +2753,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 759,
+    "patient": "sigir-201513",
     "criterion": "Age 6 months to less than 13 years of age (<13)",
     "type": "inclusion",
     "sentences": {
@@ -1845,33 +2778,17 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
-  },
-  {
-    "id": 760,
-    "criterion": "Clinical diagnosis of acute tonsillitis/pharyngitis caused by Streptococcus pyogenes based on:",
-    "type": "inclusion",
-    "sentences": {
-      "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
-      "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
-      "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
-      "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
-      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
-    },
-    "gold": {
-      "label": "not enough information",
       "evidence": [
         0
       ]
     },
-    "prediction": {
-      "label": "not enough information",
-      "evidence": []
-    }
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 762,
+    "patient": "sigir-201513",
     "criterion": "A sore and scratchy throat and/or pain on swallowing (odynophagia) together with at least 2 of the following clinical signs:",
     "type": "inclusion",
     "sentences": {
@@ -1890,10 +2807,100 @@
     "prediction": {
       "label": "not enough information",
       "evidence": []
-    }
+    },
+    "label_error": false,
+    "missing_evidence": [
+      0
+    ],
+    "spurious_evidence": []
+  },
+  {
+    "id": 763,
+    "patient": "sigir-201513",
+    "criterion": "Tonsil and/or pharyngeal erythema and/or exudate;",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
+      "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
+      "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
+      "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
+  },
+  {
+    "id": 764,
+    "patient": "sigir-201513",
+    "criterion": "Cervical adenopathy;",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
+      "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
+      "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
+      "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
+  },
+  {
+    "id": 765,
+    "patient": "sigir-201513",
+    "criterion": "Uvular edema;",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
+      "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
+      "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
+      "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
+      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 766,
+    "patient": "sigir-201513",
     "criterion": "Fever",
     "type": "inclusion",
     "sentences": {
@@ -1911,11 +2918,17 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 767,
+    "patient": "sigir-201513",
     "criterion": "Symptoms that collectively suggest nonstreptococcal T/P (eg, laryngitis, coryza, conjunctivitis, diarrhea, cough)",
     "type": "exclusion",
     "sentences": {
@@ -1934,10 +2947,16 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [
+      0
+    ],
+    "spurious_evidence": []
   },
   {
     "id": 771,
+    "patient": "sigir-201513",
     "criterion": "Females of childbearing potential (ie, have reached menarche)",
     "type": "exclusion",
     "sentences": {
@@ -1956,11 +2975,17 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [
+      0
+    ],
+    "spurious_evidence": []
   },
   {
-    "id": 774,
-    "criterion": "Myasthenia gravis",
+    "id": 775,
+    "patient": "sigir-201513",
+    "criterion": "Known impaired renal function, as shown by creatinine clearance \u226425 mL/min",
     "type": "exclusion",
     "sentences": {
       "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
@@ -1974,32 +2999,20 @@
       "evidence": []
     },
     "prediction": {
-      "label": "not enough information",
-      "evidence": []
-    }
-  },
-  {
-    "id": 779,
-    "criterion": "Has been treated with rifampicin, phenytoin, carbamazepine, or St. John's wort within the last 2 weeks",
-    "type": "exclusion",
-    "sentences": {
-      "0": "A 5-year-old boy presents to the emergency department with complaints of progressively worsening dysphagia, drooling, fever and vocal changes.",
-      "1": "He is toxic-appearing, and leans forward while sitting on his mother's lap.",
-      "2": "He is drooling and speaks with a muffled \"hot potato\" voice.",
-      "3": "The parents deny the possibility of foreign body ingestion or trauma, and they report that they are delaying some of his vaccines.",
-      "4": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
-    },
-    "gold": {
       "label": "not excluded",
-      "evidence": []
+      "evidence": [
+        0
+      ]
     },
-    "prediction": {
-      "label": "not enough information",
-      "evidence": []
-    }
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 782,
+    "patient": "sigir-201513",
     "criterion": "Children of the investigator or subinvestigator, research assistant, pharmacist, study coordinator, other staff, or relative thereof directly involved in the conduct of the protocol",
     "type": "exclusion",
     "sentences": {
@@ -2016,10 +3029,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 827,
+    "patient": "sigir-201516",
     "criterion": "Clinical diagnosis of bronchial asthma",
     "type": "inclusion",
     "sentences": {
@@ -2045,12 +3062,23 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [
+      1,
+      2,
+      3,
+      6
+    ],
+    "spurious_evidence": []
   },
   {
-    "id": 830,
-    "criterion": "Normal lung function, defined as (Knudson 1976/1984 predicted set): FVC of > 80 % of that predicted for gender, ethnicity, age and height FEV1 of > 80 % of that predicted for gender, ethnicity, age and height FEV1/FVC ratio of > .75",
+    "id": 828,
+    "patient": "sigir-201516",
+    "criterion": "Must be able to swallow tablets",
     "type": "inclusion",
     "sentences": {
       "0": "A 4 year old boy presents to the emergency room with wheezing.",
@@ -2065,17 +3093,23 @@
     },
     "gold": {
       "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not enough information",
       "evidence": [
         0
       ]
     },
-    "prediction": {
-      "label": "not enough information",
-      "evidence": []
-    }
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 831,
+    "patient": "sigir-201516",
     "criterion": "Oxygen saturation of > 94 % and normal blood pressure (Systolic between 150 - 90, Diastolic between 90-60 mm Hg)",
     "type": "inclusion",
     "sentences": {
@@ -2097,12 +3131,22 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [
+      7
+    ],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
-    "id": 833,
-    "criterion": "Negative methacholine inhalation challenge as performed in the screening protocol. (Less than a 20% decrease in FEV1 at a maximum methacholine concentration of 10 mg/ml)",
+    "id": 832,
+    "patient": "sigir-201516",
+    "criterion": "Symptom Score no greater than 6 (out of a possible 24) for total symptom score with a value no greater than 2 for any one score.",
     "type": "inclusion",
     "sentences": {
       "0": "A 4 year old boy presents to the emergency room with wheezing.",
@@ -2117,17 +3161,23 @@
     },
     "gold": {
       "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not enough information",
       "evidence": [
         0
       ]
     },
-    "prediction": {
-      "label": "not enough information",
-      "evidence": []
-    }
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 834,
+    "patient": "sigir-201516",
     "criterion": "--Negative pregnancy test for females",
     "type": "inclusion",
     "sentences": {
@@ -2147,11 +3197,51 @@
     },
     "prediction": {
       "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
+  },
+  {
+    "id": 835,
+    "patient": "sigir-201516",
+    "criterion": "Negative allergy skin test (AST)",
+    "type": "inclusion",
+    "sentences": {
+      "0": "A 4 year old boy presents to the emergency room with wheezing.",
+      "1": "He has had a history of allergic rhinitis, but no history of wheezing.",
+      "2": "His mother reports that 5 hours ago patient was playing in the backyard sandbox when she heard him suddenly start coughing.",
+      "3": "The coughing lasted only moments, but he has been audibly wheezing since.",
+      "4": "Mother was concerned, because his breathing has not returned to normal, so she brought him to the ED.",
+      "5": "On exam, the child is playful and well appearing.",
+      "6": "Wheezing is heard in the mid-right chest area.",
+      "7": "O2 sats are 100% on room air.",
+      "8": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
+    },
+    "gold": {
+      "label": "not enough information",
       "evidence": []
-    }
+    },
+    "prediction": {
+      "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 836,
+    "patient": "sigir-201516",
     "criterion": "History of episodic wheezing, chest tightness, or shortness of breath after age of 6 years consistent with asthma, or physician diagnosed asthma after age of 6 years.",
     "type": "inclusion",
     "sentences": {
@@ -2174,12 +3264,20 @@
     },
     "prediction": {
       "label": "not enough information",
-      "evidence": []
-    }
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": true,
+    "missing_evidence": [
+      1
+    ],
+    "spurious_evidence": []
   },
   {
-    "id": 838,
-    "criterion": "FEV1 of at least 80% of predicted and FEV1/FVC ratio of at least .70 (without use of bronchodilating medications for 12 hours)",
+    "id": 837,
+    "patient": "sigir-201516",
+    "criterion": "Positive methacholine test.",
     "type": "inclusion",
     "sentences": {
       "0": "A 4 year old boy presents to the emergency room with wheezing.",
@@ -2194,17 +3292,23 @@
     },
     "gold": {
       "label": "not enough information",
+      "evidence": []
+    },
+    "prediction": {
+      "label": "not enough information",
       "evidence": [
         0
       ]
     },
-    "prediction": {
-      "label": "not enough information",
-      "evidence": []
-    }
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 839,
+    "patient": "sigir-201516",
     "criterion": "Allergic sensitization to at least one of the following allergen preparations: (House Dust Mite f, House dust mite p, Cockroach, Tree mix, Grass Mix, Weed Mix, Mold Mix 1, Mold Mix 2, Rat, Mouse, Guinea Pig, Rabbit, Cat or Dog) confirmed by positive AST.",
     "type": "inclusion",
     "sentences": {
@@ -2227,12 +3331,18 @@
     "prediction": {
       "label": "not enough information",
       "evidence": []
-    }
+    },
+    "label_error": false,
+    "missing_evidence": [
+      1
+    ],
+    "spurious_evidence": []
   },
   {
-    "id": 847,
-    "criterion": "Pregnancy or nursing a baby.",
-    "type": "exclusion",
+    "id": 840,
+    "patient": "sigir-201516",
+    "criterion": "Negative allergy skin test as performed in the screening protocol.",
+    "type": "inclusion",
     "sentences": {
       "0": "A 4 year old boy presents to the emergency room with wheezing.",
       "1": "He has had a history of allergic rhinitis, but no history of wheezing.",
@@ -2245,16 +3355,24 @@
       "8": "The patient will provide informed consent, and will comply with the trial protocol without any practical issues."
     },
     "gold": {
-      "label": "not applicable",
+      "label": "not enough information",
       "evidence": []
     },
     "prediction": {
-      "label": "not excluded",
-      "evidence": []
-    }
+      "label": "not enough information",
+      "evidence": [
+        0
+      ]
+    },
+    "label_error": false,
+    "missing_evidence": [],
+    "spurious_evidence": [
+      0
+    ]
   },
   {
     "id": 848,
+    "patient": "sigir-201516",
     "criterion": "Cigarette smoking > 1 pack per month.",
     "type": "exclusion",
     "sentences": {
@@ -2275,10 +3393,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [],
+    "spurious_evidence": []
   },
   {
     "id": 849,
+    "patient": "sigir-201516",
     "criterion": "Nighttime symptoms of cough or wheeze greater than 1x/week at baseline (not during a clearly recognized viral induced asthma exacerbation) which would be characteristic of a person of moderate or severe persistent asthma as outlined in the current NHLBI guidelines for diagnosis and management of asthma.",
     "type": "exclusion",
     "sentences": {
@@ -2303,10 +3425,18 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": true,
+    "missing_evidence": [
+      0,
+      3,
+      6
+    ],
+    "spurious_evidence": []
   },
   {
     "id": 850,
+    "patient": "sigir-201516",
     "criterion": "Exacerbation of asthma more than 2x/week which would be characteristic of a person of moderate or severe persistent asthma as outlined in the current NHLBI guidelines for diagnosis and management of asthma.",
     "type": "exclusion",
     "sentences": {
@@ -2332,6 +3462,14 @@
     "prediction": {
       "label": "not excluded",
       "evidence": []
-    }
+    },
+    "label_error": false,
+    "missing_evidence": [
+      0,
+      1,
+      3,
+      6
+    ],
+    "spurious_evidence": []
   }
 ]
